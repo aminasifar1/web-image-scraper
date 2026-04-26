@@ -1,0 +1,128 @@
+==================================
+Corporate Crawler - SLURM Job
+==================================
+
+Job ID: 110759
+Start time: jue 16 abr 2026 19:48:33 CEST
+
+Pre-run checks:
+  ✓ Website CSV found: /export/fhome/aaasidar/spai-hf/websites_5_categories.csv
+  ✓ Websites to crawl: 8
+
+Parameters:
+  Output directory: /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full/live
+  Base output directory: /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full
+  Max images per site: 80
+  Max pages per site: 15
+  Delay between requests: 2.0 seconds
+  Cleaning: min 180x180, area>=50000, bytes>=4000, ratio[0.33,3.0]
+  Organized storage: true
+  Reject sticker-like: true
+  Reject video thumbnails: true
+  Drop duplicate content: true
+  Drop near duplicates: true (hash_size=16, hamming<=12)
+  Wayback enabled: false
+  Wayback years: 2020 2021 2022 2023 2024
+  JS rendering: true
+  Respect robots.txt: true
+  Rotate User-Agent: true
+  Require semantic alt/caption: false (min chars: 8)
+  News classification: true
+  News threshold: 0.6
+  News max images: 0
+  News analysis dir: /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full/news_analysis
+
+Starting crawl...
+---
+2026-04-16 19:48:34,561 | INFO     | Corporate Crawler starting
+2026-04-16 19:48:34,562 | INFO     | Loaded 9 websites from /export/fhome/aaasidar/spai-hf/websites_5_categories.csv
+2026-04-16 19:48:34,562 | INFO     | Starting crawl of 9 websites
+2026-04-16 19:48:34,562 | INFO     | Wayback enabled: False, years: [2020, 2021, 2022, 2023, 2024]
+2026-04-16 19:48:34,563 | INFO     | Output directory: /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full/live
+2026-04-16 19:48:34,563 | INFO     | Incremental mode: existing hashes=0, next filename index=1
+2026-04-16 19:48:34,563 | INFO     | [LIVE] Starting crawl: El Pais (https://elpais.com)
+2026-04-16 19:50:00,389 | INFO     | ✓ [LIVE] El Pais: 15 images
+2026-04-16 19:50:00,389 | INFO     | [LIVE] Starting crawl: BBC News (https://www.bbc.com/news)
+2026-04-16 19:50:42,336 | INFO     | ✓ [LIVE] BBC News: 80 images
+2026-04-16 19:50:42,336 | INFO     | [LIVE] Starting crawl: La Vanguardia (https://www.lavanguardia.com)
+2026-04-16 19:51:58,013 | INFO     | ✓ [LIVE] La Vanguardia: 55 images
+2026-04-16 19:51:58,013 | INFO     | [LIVE] Starting crawl: Flickr (https://www.flickr.com)
+2026-04-16 19:51:58,252 | WARNING  | ✗ [LIVE] Flickr: No images
+2026-04-16 19:51:58,253 | INFO     | [LIVE] Starting crawl: ArtStation (https://www.artstation.com/?sort_by=community&dimension=all)
+2026-04-16 19:51:58,327 | WARNING  | ✗ [LIVE] ArtStation: No images
+2026-04-16 19:51:58,328 | INFO     | [LIVE] Starting crawl: DeviantArt (https://www.deviantart.com/tag/fanart)
+2026-04-16 19:54:16,868 | INFO     | ✓ [LIVE] DeviantArt: 11 images
+2026-04-16 19:54:16,868 | INFO     | [LIVE] Starting crawl: Universitat Autonoma de Barcelona (https://www.uab.cat)
+2026-04-16 19:55:45,236 | INFO     | ✓ [LIVE] Universitat Autonoma de Barcelona: 64 images
+2026-04-16 19:55:45,236 | INFO     | [LIVE] Starting crawl: Universitat Politecnica de Catalunya (https://www.upc.edu/ca)
+2026-04-16 19:57:48,945 | INFO     | ✓ [LIVE] Universitat Politecnica de Catalunya: 46 images
+2026-04-16 19:57:48,945 | INFO     | [LIVE] Starting crawl: Stanford University (https://www.stanford.edu)
+2026-04-16 19:59:05,544 | INFO     | ✓ [LIVE] Stanford University: 80 images
+2026-04-16 19:59:05,579 | INFO     | ✓ Generated metadata CSV: /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full/live/images_metadata_20260416_195905.csv
+2026-04-16 19:59:05,579 | INFO     | ================================================================================
+2026-04-16 19:59:05,579 | INFO     | CRAWL SUMMARY
+2026-04-16 19:59:05,579 | INFO     | ================================================================================
+2026-04-16 19:59:05,579 | INFO     |   Websites attempted:          9
+2026-04-16 19:59:05,579 | INFO     |   Websites successful:         7
+2026-04-16 19:59:05,579 | INFO     |   Pages crawled:               89
+2026-04-16 19:59:05,579 | INFO     |   Images found (post-filters): 890
+2026-04-16 19:59:05,579 | INFO     |   Images filtered (ads):       1096
+2026-04-16 19:59:05,579 | INFO     |   Images filtered (ui/icon):   509
+2026-04-16 19:59:05,579 | INFO     |   Images filtered (quality):   106
+2026-04-16 19:59:05,579 | INFO     |   Images filtered (sticker):   11
+2026-04-16 19:59:05,579 | INFO     |   Images filtered (video):     141
+2026-04-16 19:59:05,579 | INFO     |   Images filtered (near-dup):  247
+2026-04-16 19:59:05,579 | INFO     |   Images filtered (no alt):    0
+2026-04-16 19:59:05,580 | INFO     |   Images skipped (duplicate):  0
+2026-04-16 19:59:05,580 | INFO     |   Images downloaded:           351
+2026-04-16 19:59:05,580 | INFO     |   Pages skipped (robots):      2
+2026-04-16 19:59:05,580 | INFO     |   Wayback snapshots crawled:   0
+2026-04-16 19:59:05,580 | INFO     |   Total time:                  0:10:30.981848
+2026-04-16 19:59:05,580 | INFO     | ================================================================================
+2026-04-16 19:59:05,731 | INFO     | Crawl completed successfully
+---
+
+Crawl Summary:
+  Stats file: /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full/live/stats_20260416_195905.json
+  Total images downloaded: 351
+  Metadata entries: 351
+  Metadata file: /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full/live/images_metadata_20260416_195905.csv
+
+Running news classification and graphics...
+=> merge config from /fhome/aaasidar/spai-hf/configs/spai.yaml
+{
+  "metadata_csv": "/export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full/live/images_metadata_20260416_195905.csv",
+  "selected_news_rows": 150,
+  "classified": 150,
+  "failed": 0,
+  "threshold": 0.6,
+  "ai_count": 20,
+  "real_count": 130,
+  "score_mean": 0.1562328800006111,
+  "score_median": 9.066534971680085e-07,
+  "score_min": 0.0,
+  "score_max": 1.0,
+  "artifacts": {
+    "predictions_csv": "/export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full/news_analysis/news_predictions.csv",
+    "score_plot": "/export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full/news_analysis/score.png",
+    "score_histogram": "/export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full/news_analysis/score_histogram.png",
+    "testing_graphics": "/export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full/news_analysis/testing_graphics.png"
+  }
+}
+  ✓ News analysis generated:
+    - /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full/news_analysis/score.png
+    - /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full/news_analysis/score_histogram.png
+    - /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full/news_analysis/testing_graphics.png
+    - /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full/news_analysis/news_predictions.csv
+
+Downloaded images location: /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full/live/images/
+  Total image files: 351
+  Sample images:
+    /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full/live/images/news/elpais.com/live/image_00000013.jpg
+    /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full/live/images/news/elpais.com/live/image_00000009.png
+    /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full/live/images/news/elpais.com/live/image_00000015.jpg
+    /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full/live/images/news/elpais.com/live/image_00000001.jpg
+
+End time: jue 16 abr 2026 20:34:35 CEST
+Run artifact root: /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_194832_live_full
+✓ Job completed successfully

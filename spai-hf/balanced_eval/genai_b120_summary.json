@@ -1,0 +1,46 @@
+{
+  "dataset": "BaiqiL/GenAI-Bench",
+  "requested_split": "test",
+  "resolved_split": "train",
+  "total_requested": 120,
+  "total_collected": 120,
+  "image_columns": [
+    "DALLE_3",
+    "Midjourney_6",
+    "SDXL_Base",
+    "SDXL_2_1",
+    "SDXL_Turbo",
+    "DeepFloyd_I_XL_v1"
+  ],
+  "column_targets": {
+    "DALLE_3": 20,
+    "Midjourney_6": 20,
+    "SDXL_Base": 20,
+    "SDXL_2_1": 20,
+    "SDXL_Turbo": 20,
+    "DeepFloyd_I_XL_v1": 20
+  },
+  "column_counts": {
+    "DALLE_3": 20,
+    "Midjourney_6": 20,
+    "SDXL_Base": 20,
+    "SDXL_2_1": 20,
+    "SDXL_Turbo": 20,
+    "DeepFloyd_I_XL_v1": 20
+  },
+  "balanced_across_models": true,
+  "shared_sample_for_all_thresholds": true,
+  "thresholds": [
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8
+  ],
+  "outputs": {
+    "scores_csv": "balanced_eval/genai_b120_scores.csv",
+    "thresholds_global_csv": "balanced_eval/genai_b120_thresholds_global.csv",
+    "thresholds_by_model_csv": "balanced_eval/genai_b120_thresholds_by_model.csv"
+  }
+}

@@ -1,0 +1,227 @@
+[INFO] Output base: /tmp/spai_hf_ai_vs_real_200_20260418_215050
+[INFO] Log en vivo + guardado en: /tmp/spai_hf_ai_vs_real_200_20260418_215050/run.log
+/fhome/aaasidar/miniconda3/lib/python3.13/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.4.1)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/fhome/aaasidar/miniconda3/lib/python3.13/site-packages/albumentations/__init__.py:13: UserWarning: A new version of Albumentations is available: 2.0.8 (you have 1.4.14). Upgrade using: pip install -U albumentations. To disable automatic update checks, set the environment variable NO_ALBUMENTATIONS_UPDATE to 1.
+  check_for_updates()
+/fhome/aaasidar/miniconda3/lib/python3.13/site-packages/torch/cuda/__init__.py:180: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 12040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:119.)
+  return torch._C._cuda_getDeviceCount() > 0
+=> merge config from /fhome/aaasidar/spai-hf/configs/spai.yaml
+Randomized dataset order (seed=42, buffer_size=2000)
+Using split 'train' from dataset 'Parveshiiii/AI-vs-Real' (requested: 'train')
+Using image column 'image'
+Using dataset profile for 'Parveshiiii/AI-vs-Real': {'gt_label_column': 'binary_label', 'label_names': {0: 'ai-generated', 1: 'real'}, 'label_to_model': {0: 1, 1: 0}}
+Using label_to_model override: {0: 1, 1: 0}
+img=1 | ref=index:0 | score=0.001630 | pred=real | gt=real | ok=1 | ai=0 | real=1 | acc=1.0000 | ips=0.20
+img=2 | ref=index:1 | score=0.014122 | pred=real | gt=real | ok=1 | ai=0 | real=2 | acc=1.0000 | ips=0.20
+img=3 | ref=index:2 | score=0.000000 | pred=real | gt=real | ok=1 | ai=0 | real=3 | acc=1.0000 | ips=0.20
+img=4 | ref=index:3 | score=0.002663 | pred=real | gt=real | ok=1 | ai=0 | real=4 | acc=1.0000 | ips=0.20
+img=5 | ref=index:4 | score=0.086348 | pred=real | gt=real | ok=1 | ai=0 | real=5 | acc=1.0000 | ips=0.20
+img=6 | ref=index:5 | score=0.000002 | pred=real | gt=real | ok=1 | ai=0 | real=6 | acc=1.0000 | ips=0.20
+img=7 | ref=index:6 | score=0.998630 | pred=ai-generated | gt=real | ok=0 | ai=1 | real=6 | acc=0.8571 | ips=0.20
+img=8 | ref=index:7 | score=0.997424 | pred=ai-generated | gt=real | ok=0 | ai=2 | real=6 | acc=0.7500 | ips=0.20
+img=9 | ref=index:8 | score=0.891623 | pred=ai-generated | gt=real | ok=0 | ai=3 | real=6 | acc=0.6667 | ips=0.20
+img=10 | ref=index:9 | score=0.999926 | pred=ai-generated | gt=real | ok=0 | ai=4 | real=6 | acc=0.6000 | ips=0.20
+img=11 | ref=index:10 | score=0.021982 | pred=real | gt=real | ok=1 | ai=4 | real=7 | acc=0.6364 | ips=0.20
+img=12 | ref=index:11 | score=0.000007 | pred=real | gt=real | ok=1 | ai=4 | real=8 | acc=0.6667 | ips=0.20
+img=13 | ref=index:12 | score=0.872619 | pred=ai-generated | gt=real | ok=0 | ai=5 | real=8 | acc=0.6154 | ips=0.20
+img=14 | ref=index:13 | score=0.000000 | pred=real | gt=real | ok=1 | ai=5 | real=9 | acc=0.6429 | ips=0.20
+img=15 | ref=index:14 | score=0.426775 | pred=ai-generated | gt=real | ok=0 | ai=6 | real=9 | acc=0.6000 | ips=0.20
+img=16 | ref=index:15 | score=0.771852 | pred=ai-generated | gt=real | ok=0 | ai=7 | real=9 | acc=0.5625 | ips=0.20
+img=17 | ref=index:16 | score=0.988866 | pred=ai-generated | gt=real | ok=0 | ai=8 | real=9 | acc=0.5294 | ips=0.20
+img=18 | ref=index:17 | score=0.853064 | pred=ai-generated | gt=real | ok=0 | ai=9 | real=9 | acc=0.5000 | ips=0.20
+img=19 | ref=index:18 | score=0.000017 | pred=real | gt=real | ok=1 | ai=9 | real=10 | acc=0.5263 | ips=0.20
+img=20 | ref=index:19 | score=0.012123 | pred=real | gt=real | ok=1 | ai=9 | real=11 | acc=0.5500 | ips=0.20
+img=21 | ref=index:20 | score=0.082033 | pred=real | gt=real | ok=1 | ai=9 | real=12 | acc=0.5714 | ips=0.20
+img=22 | ref=index:21 | score=0.984228 | pred=ai-generated | gt=real | ok=0 | ai=10 | real=12 | acc=0.5455 | ips=0.20
+img=23 | ref=index:22 | score=0.082560 | pred=real | gt=real | ok=1 | ai=10 | real=13 | acc=0.5652 | ips=0.20
+img=24 | ref=index:23 | score=0.999998 | pred=ai-generated | gt=real | ok=0 | ai=11 | real=13 | acc=0.5417 | ips=0.20
+img=25 | ref=index:24 | score=0.000000 | pred=real | gt=real | ok=1 | ai=11 | real=14 | acc=0.5600 | ips=0.20
+img=26 | ref=index:25 | score=0.000000 | pred=real | gt=real | ok=1 | ai=11 | real=15 | acc=0.5769 | ips=0.20
+img=27 | ref=index:26 | score=0.180058 | pred=real | gt=real | ok=1 | ai=11 | real=16 | acc=0.5926 | ips=0.20
+img=28 | ref=index:27 | score=0.164557 | pred=real | gt=real | ok=1 | ai=11 | real=17 | acc=0.6071 | ips=0.20
+img=29 | ref=index:28 | score=0.020039 | pred=real | gt=real | ok=1 | ai=11 | real=18 | acc=0.6207 | ips=0.20
+img=30 | ref=index:29 | score=0.000001 | pred=real | gt=real | ok=1 | ai=11 | real=19 | acc=0.6333 | ips=0.20
+img=31 | ref=index:30 | score=0.002873 | pred=real | gt=real | ok=1 | ai=11 | real=20 | acc=0.6452 | ips=0.20
+img=32 | ref=index:31 | score=0.003852 | pred=real | gt=real | ok=1 | ai=11 | real=21 | acc=0.6562 | ips=0.20
+img=33 | ref=index:32 | score=0.061288 | pred=real | gt=real | ok=1 | ai=11 | real=22 | acc=0.6667 | ips=0.20
+img=34 | ref=index:33 | score=0.000000 | pred=real | gt=real | ok=1 | ai=11 | real=23 | acc=0.6765 | ips=0.20
+img=35 | ref=index:34 | score=0.000002 | pred=real | gt=real | ok=1 | ai=11 | real=24 | acc=0.6857 | ips=0.20
+img=36 | ref=index:35 | score=0.000000 | pred=real | gt=real | ok=1 | ai=11 | real=25 | acc=0.6944 | ips=0.20
+img=37 | ref=index:36 | score=0.000011 | pred=real | gt=real | ok=1 | ai=11 | real=26 | acc=0.7027 | ips=0.20
+img=38 | ref=index:37 | score=0.000007 | pred=real | gt=real | ok=1 | ai=11 | real=27 | acc=0.7105 | ips=0.20
+img=39 | ref=index:38 | score=0.000000 | pred=real | gt=real | ok=1 | ai=11 | real=28 | acc=0.7179 | ips=0.20
+img=40 | ref=index:39 | score=0.000000 | pred=real | gt=real | ok=1 | ai=11 | real=29 | acc=0.7250 | ips=0.20
+img=41 | ref=index:40 | score=0.108414 | pred=real | gt=real | ok=1 | ai=11 | real=30 | acc=0.7317 | ips=0.20
+img=42 | ref=index:41 | score=0.293526 | pred=real | gt=real | ok=1 | ai=11 | real=31 | acc=0.7381 | ips=0.20
+img=43 | ref=index:42 | score=0.425027 | pred=ai-generated | gt=real | ok=0 | ai=12 | real=31 | acc=0.7209 | ips=0.20
+img=44 | ref=index:43 | score=0.979913 | pred=ai-generated | gt=real | ok=0 | ai=13 | real=31 | acc=0.7045 | ips=0.20
+img=45 | ref=index:44 | score=0.513763 | pred=ai-generated | gt=real | ok=0 | ai=14 | real=31 | acc=0.6889 | ips=0.20
+img=46 | ref=index:45 | score=0.698928 | pred=ai-generated | gt=real | ok=0 | ai=15 | real=31 | acc=0.6739 | ips=0.20
+img=47 | ref=index:46 | score=0.998599 | pred=ai-generated | gt=real | ok=0 | ai=16 | real=31 | acc=0.6596 | ips=0.20
+img=48 | ref=index:47 | score=0.624692 | pred=ai-generated | gt=real | ok=0 | ai=17 | real=31 | acc=0.6458 | ips=0.20
+img=49 | ref=index:48 | score=0.063830 | pred=real | gt=real | ok=1 | ai=17 | real=32 | acc=0.6531 | ips=0.20
+img=50 | ref=index:49 | score=0.057207 | pred=real | gt=real | ok=1 | ai=17 | real=33 | acc=0.6600 | ips=0.20
+img=51 | ref=index:50 | score=0.535025 | pred=ai-generated | gt=real | ok=0 | ai=18 | real=33 | acc=0.6471 | ips=0.20
+img=52 | ref=index:51 | score=0.000188 | pred=real | gt=real | ok=1 | ai=18 | real=34 | acc=0.6538 | ips=0.20
+img=53 | ref=index:52 | score=0.000415 | pred=real | gt=real | ok=1 | ai=18 | real=35 | acc=0.6604 | ips=0.20
+img=54 | ref=index:53 | score=0.000057 | pred=real | gt=real | ok=1 | ai=18 | real=36 | acc=0.6667 | ips=0.20
+img=55 | ref=index:54 | score=0.001992 | pred=real | gt=real | ok=1 | ai=18 | real=37 | acc=0.6727 | ips=0.20
+img=56 | ref=index:55 | score=0.884956 | pred=ai-generated | gt=real | ok=0 | ai=19 | real=37 | acc=0.6607 | ips=0.20
+img=57 | ref=index:56 | score=0.000000 | pred=real | gt=real | ok=1 | ai=19 | real=38 | acc=0.6667 | ips=0.20
+img=58 | ref=index:57 | score=0.223936 | pred=real | gt=real | ok=1 | ai=19 | real=39 | acc=0.6724 | ips=0.20
+img=59 | ref=index:58 | score=0.000000 | pred=real | gt=real | ok=1 | ai=19 | real=40 | acc=0.6780 | ips=0.20
+img=60 | ref=index:59 | score=0.000264 | pred=real | gt=real | ok=1 | ai=19 | real=41 | acc=0.6833 | ips=0.20
+img=61 | ref=index:60 | score=0.000000 | pred=real | gt=real | ok=1 | ai=19 | real=42 | acc=0.6885 | ips=0.20
+img=62 | ref=index:61 | score=0.573746 | pred=ai-generated | gt=real | ok=0 | ai=20 | real=42 | acc=0.6774 | ips=0.20
+img=63 | ref=index:62 | score=0.000132 | pred=real | gt=real | ok=1 | ai=20 | real=43 | acc=0.6825 | ips=0.20
+img=64 | ref=index:63 | score=0.999911 | pred=ai-generated | gt=real | ok=0 | ai=21 | real=43 | acc=0.6719 | ips=0.20
+img=65 | ref=index:64 | score=0.893310 | pred=ai-generated | gt=real | ok=0 | ai=22 | real=43 | acc=0.6615 | ips=0.20
+img=66 | ref=index:65 | score=0.000000 | pred=real | gt=real | ok=1 | ai=22 | real=44 | acc=0.6667 | ips=0.20
+img=67 | ref=index:66 | score=0.491385 | pred=ai-generated | gt=real | ok=0 | ai=23 | real=44 | acc=0.6567 | ips=0.20
+img=68 | ref=index:67 | score=0.679236 | pred=ai-generated | gt=real | ok=0 | ai=24 | real=44 | acc=0.6471 | ips=0.20
+img=69 | ref=index:68 | score=0.366444 | pred=ai-generated | gt=real | ok=0 | ai=25 | real=44 | acc=0.6377 | ips=0.20
+img=70 | ref=index:69 | score=0.290588 | pred=real | gt=real | ok=1 | ai=25 | real=45 | acc=0.6429 | ips=0.20
+img=71 | ref=index:70 | score=0.000000 | pred=real | gt=real | ok=1 | ai=25 | real=46 | acc=0.6479 | ips=0.20
+img=72 | ref=index:71 | score=0.994131 | pred=ai-generated | gt=real | ok=0 | ai=26 | real=46 | acc=0.6389 | ips=0.20
+img=73 | ref=index:72 | score=0.000116 | pred=real | gt=real | ok=1 | ai=26 | real=47 | acc=0.6438 | ips=0.20
+img=74 | ref=index:73 | score=0.000063 | pred=real | gt=real | ok=1 | ai=26 | real=48 | acc=0.6486 | ips=0.20
+img=75 | ref=index:74 | score=0.986766 | pred=ai-generated | gt=real | ok=0 | ai=27 | real=48 | acc=0.6400 | ips=0.20
+img=76 | ref=index:75 | score=0.000000 | pred=real | gt=real | ok=1 | ai=27 | real=49 | acc=0.6447 | ips=0.20
+img=77 | ref=index:76 | score=0.993554 | pred=ai-generated | gt=real | ok=0 | ai=28 | real=49 | acc=0.6364 | ips=0.20
+img=78 | ref=index:77 | score=0.000030 | pred=real | gt=real | ok=1 | ai=28 | real=50 | acc=0.6410 | ips=0.20
+img=79 | ref=index:78 | score=0.000000 | pred=real | gt=real | ok=1 | ai=28 | real=51 | acc=0.6456 | ips=0.20
+img=80 | ref=index:79 | score=0.999989 | pred=ai-generated | gt=real | ok=0 | ai=29 | real=51 | acc=0.6375 | ips=0.20
+img=81 | ref=index:80 | score=0.961115 | pred=ai-generated | gt=real | ok=0 | ai=30 | real=51 | acc=0.6296 | ips=0.20
+img=82 | ref=index:81 | score=0.723030 | pred=ai-generated | gt=real | ok=0 | ai=31 | real=51 | acc=0.6220 | ips=0.20
+img=83 | ref=index:82 | score=0.022785 | pred=real | gt=real | ok=1 | ai=31 | real=52 | acc=0.6265 | ips=0.20
+img=84 | ref=index:83 | score=0.000075 | pred=real | gt=real | ok=1 | ai=31 | real=53 | acc=0.6310 | ips=0.20
+img=85 | ref=index:84 | score=0.448101 | pred=ai-generated | gt=real | ok=0 | ai=32 | real=53 | acc=0.6235 | ips=0.20
+img=86 | ref=index:85 | score=0.000002 | pred=real | gt=real | ok=1 | ai=32 | real=54 | acc=0.6279 | ips=0.20
+img=87 | ref=index:86 | score=0.596394 | pred=ai-generated | gt=real | ok=0 | ai=33 | real=54 | acc=0.6207 | ips=0.20
+img=88 | ref=index:87 | score=0.000000 | pred=real | gt=real | ok=1 | ai=33 | real=55 | acc=0.6250 | ips=0.20
+img=89 | ref=index:88 | score=0.011452 | pred=real | gt=real | ok=1 | ai=33 | real=56 | acc=0.6292 | ips=0.20
+img=90 | ref=index:89 | score=0.865717 | pred=ai-generated | gt=real | ok=0 | ai=34 | real=56 | acc=0.6222 | ips=0.20
+img=91 | ref=index:90 | score=0.014827 | pred=real | gt=real | ok=1 | ai=34 | real=57 | acc=0.6264 | ips=0.20
+img=92 | ref=index:91 | score=0.000001 | pred=real | gt=real | ok=1 | ai=34 | real=58 | acc=0.6304 | ips=0.20
+img=93 | ref=index:92 | score=0.010560 | pred=real | gt=real | ok=1 | ai=34 | real=59 | acc=0.6344 | ips=0.20
+img=94 | ref=index:93 | score=0.061750 | pred=real | gt=real | ok=1 | ai=34 | real=60 | acc=0.6383 | ips=0.20
+img=95 | ref=index:94 | score=0.000020 | pred=real | gt=real | ok=1 | ai=34 | real=61 | acc=0.6421 | ips=0.20
+img=96 | ref=index:95 | score=0.051999 | pred=real | gt=real | ok=1 | ai=34 | real=62 | acc=0.6458 | ips=0.20
+img=97 | ref=index:96 | score=0.000000 | pred=real | gt=real | ok=1 | ai=34 | real=63 | acc=0.6495 | ips=0.20
+img=98 | ref=index:97 | score=0.773924 | pred=ai-generated | gt=real | ok=0 | ai=35 | real=63 | acc=0.6429 | ips=0.20
+img=99 | ref=index:98 | score=0.998688 | pred=ai-generated | gt=real | ok=0 | ai=36 | real=63 | acc=0.6364 | ips=0.20
+img=100 | ref=index:99 | score=0.000000 | pred=real | gt=real | ok=1 | ai=36 | real=64 | acc=0.6400 | ips=0.20
+img=101 | ref=index:100 | score=0.545725 | pred=ai-generated | gt=real | ok=0 | ai=37 | real=64 | acc=0.6337 | ips=0.20
+img=102 | ref=index:101 | score=0.000000 | pred=real | gt=real | ok=1 | ai=37 | real=65 | acc=0.6373 | ips=0.20
+img=103 | ref=index:102 | score=0.000010 | pred=real | gt=real | ok=1 | ai=37 | real=66 | acc=0.6408 | ips=0.20
+img=104 | ref=index:103 | score=0.027245 | pred=real | gt=real | ok=1 | ai=37 | real=67 | acc=0.6442 | ips=0.20
+img=105 | ref=index:104 | score=1.000000 | pred=ai-generated | gt=real | ok=0 | ai=38 | real=67 | acc=0.6381 | ips=0.20
+img=106 | ref=index:105 | score=0.999598 | pred=ai-generated | gt=real | ok=0 | ai=39 | real=67 | acc=0.6321 | ips=0.20
+img=107 | ref=index:106 | score=0.997202 | pred=ai-generated | gt=real | ok=0 | ai=40 | real=67 | acc=0.6262 | ips=0.20
+img=108 | ref=index:107 | score=0.993893 | pred=ai-generated | gt=real | ok=0 | ai=41 | real=67 | acc=0.6204 | ips=0.20
+img=109 | ref=index:108 | score=0.033484 | pred=real | gt=real | ok=1 | ai=41 | real=68 | acc=0.6239 | ips=0.20
+img=110 | ref=index:109 | score=0.000638 | pred=real | gt=real | ok=1 | ai=41 | real=69 | acc=0.6273 | ips=0.20
+img=111 | ref=index:110 | score=0.000009 | pred=real | gt=real | ok=1 | ai=41 | real=70 | acc=0.6306 | ips=0.20
+img=112 | ref=index:111 | score=0.998796 | pred=ai-generated | gt=real | ok=0 | ai=42 | real=70 | acc=0.6250 | ips=0.20
+img=113 | ref=index:112 | score=0.045699 | pred=real | gt=real | ok=1 | ai=42 | real=71 | acc=0.6283 | ips=0.20
+img=114 | ref=index:113 | score=0.073776 | pred=real | gt=real | ok=1 | ai=42 | real=72 | acc=0.6316 | ips=0.20
+img=115 | ref=index:114 | score=0.787443 | pred=ai-generated | gt=real | ok=0 | ai=43 | real=72 | acc=0.6261 | ips=0.20
+img=116 | ref=index:115 | score=0.000000 | pred=real | gt=real | ok=1 | ai=43 | real=73 | acc=0.6293 | ips=0.20
+img=117 | ref=index:116 | score=0.800464 | pred=ai-generated | gt=real | ok=0 | ai=44 | real=73 | acc=0.6239 | ips=0.20
+img=118 | ref=index:117 | score=0.015937 | pred=real | gt=real | ok=1 | ai=44 | real=74 | acc=0.6271 | ips=0.20
+img=119 | ref=index:118 | score=0.000000 | pred=real | gt=real | ok=1 | ai=44 | real=75 | acc=0.6303 | ips=0.20
+img=120 | ref=index:119 | score=0.638677 | pred=ai-generated | gt=real | ok=0 | ai=45 | real=75 | acc=0.6250 | ips=0.20
+img=121 | ref=index:120 | score=0.983336 | pred=ai-generated | gt=real | ok=0 | ai=46 | real=75 | acc=0.6198 | ips=0.20
+img=122 | ref=index:121 | score=0.006933 | pred=real | gt=real | ok=1 | ai=46 | real=76 | acc=0.6230 | ips=0.20
+img=123 | ref=index:122 | score=0.000000 | pred=real | gt=real | ok=1 | ai=46 | real=77 | acc=0.6260 | ips=0.20
+img=124 | ref=index:123 | score=0.812950 | pred=ai-generated | gt=real | ok=0 | ai=47 | real=77 | acc=0.6210 | ips=0.20
+img=125 | ref=index:124 | score=0.000477 | pred=real | gt=real | ok=1 | ai=47 | real=78 | acc=0.6240 | ips=0.20
+img=126 | ref=index:125 | score=0.932515 | pred=ai-generated | gt=real | ok=0 | ai=48 | real=78 | acc=0.6190 | ips=0.20
+img=127 | ref=index:126 | score=0.000000 | pred=real | gt=real | ok=1 | ai=48 | real=79 | acc=0.6220 | ips=0.20
+img=128 | ref=index:127 | score=0.000003 | pred=real | gt=real | ok=1 | ai=48 | real=80 | acc=0.6250 | ips=0.20
+img=129 | ref=index:128 | score=0.000925 | pred=real | gt=real | ok=1 | ai=48 | real=81 | acc=0.6279 | ips=0.20
+img=130 | ref=index:129 | score=0.913659 | pred=ai-generated | gt=real | ok=0 | ai=49 | real=81 | acc=0.6231 | ips=0.20
+img=131 | ref=index:130 | score=0.000000 | pred=real | gt=real | ok=1 | ai=49 | real=82 | acc=0.6260 | ips=0.20
+img=132 | ref=index:131 | score=0.999995 | pred=ai-generated | gt=real | ok=0 | ai=50 | real=82 | acc=0.6212 | ips=0.20
+img=133 | ref=index:132 | score=0.001373 | pred=real | gt=real | ok=1 | ai=50 | real=83 | acc=0.6241 | ips=0.20
+img=134 | ref=index:133 | score=0.992724 | pred=ai-generated | gt=real | ok=0 | ai=51 | real=83 | acc=0.6194 | ips=0.20
+img=135 | ref=index:134 | score=0.900472 | pred=ai-generated | gt=real | ok=0 | ai=52 | real=83 | acc=0.6148 | ips=0.20
+img=136 | ref=index:135 | score=0.030157 | pred=real | gt=real | ok=1 | ai=52 | real=84 | acc=0.6176 | ips=0.20
+img=137 | ref=index:136 | score=0.940244 | pred=ai-generated | gt=real | ok=0 | ai=53 | real=84 | acc=0.6131 | ips=0.20
+img=138 | ref=index:137 | score=0.716769 | pred=ai-generated | gt=real | ok=0 | ai=54 | real=84 | acc=0.6087 | ips=0.20
+img=139 | ref=index:138 | score=0.999984 | pred=ai-generated | gt=real | ok=0 | ai=55 | real=84 | acc=0.6043 | ips=0.20
+img=140 | ref=index:139 | score=0.776288 | pred=ai-generated | gt=real | ok=0 | ai=56 | real=84 | acc=0.6000 | ips=0.20
+img=141 | ref=index:140 | score=0.000001 | pred=real | gt=real | ok=1 | ai=56 | real=85 | acc=0.6028 | ips=0.20
+img=142 | ref=index:141 | score=0.000000 | pred=real | gt=real | ok=1 | ai=56 | real=86 | acc=0.6056 | ips=0.20
+img=143 | ref=index:142 | score=0.000024 | pred=real | gt=real | ok=1 | ai=56 | real=87 | acc=0.6084 | ips=0.20
+img=144 | ref=index:143 | score=0.000000 | pred=real | gt=real | ok=1 | ai=56 | real=88 | acc=0.6111 | ips=0.20
+img=145 | ref=index:144 | score=0.999994 | pred=ai-generated | gt=real | ok=0 | ai=57 | real=88 | acc=0.6069 | ips=0.20
+img=146 | ref=index:145 | score=0.032907 | pred=real | gt=real | ok=1 | ai=57 | real=89 | acc=0.6096 | ips=0.20
+img=147 | ref=index:146 | score=0.000005 | pred=real | gt=real | ok=1 | ai=57 | real=90 | acc=0.6122 | ips=0.20
+img=148 | ref=index:147 | score=0.937067 | pred=ai-generated | gt=real | ok=0 | ai=58 | real=90 | acc=0.6081 | ips=0.20
+img=149 | ref=index:148 | score=0.015364 | pred=real | gt=real | ok=1 | ai=58 | real=91 | acc=0.6107 | ips=0.20
+img=150 | ref=index:149 | score=0.000100 | pred=real | gt=real | ok=1 | ai=58 | real=92 | acc=0.6133 | ips=0.20
+img=151 | ref=index:150 | score=0.999280 | pred=ai-generated | gt=real | ok=0 | ai=59 | real=92 | acc=0.6093 | ips=0.20
+img=152 | ref=index:151 | score=0.942065 | pred=ai-generated | gt=real | ok=0 | ai=60 | real=92 | acc=0.6053 | ips=0.20
+img=153 | ref=index:152 | score=0.000001 | pred=real | gt=real | ok=1 | ai=60 | real=93 | acc=0.6078 | ips=0.20
+img=154 | ref=index:153 | score=0.999949 | pred=ai-generated | gt=real | ok=0 | ai=61 | real=93 | acc=0.6039 | ips=0.20
+img=155 | ref=index:154 | score=0.186978 | pred=real | gt=real | ok=1 | ai=61 | real=94 | acc=0.6065 | ips=0.20
+img=156 | ref=index:155 | score=0.031632 | pred=real | gt=real | ok=1 | ai=61 | real=95 | acc=0.6090 | ips=0.20
+img=157 | ref=index:156 | score=0.000073 | pred=real | gt=real | ok=1 | ai=61 | real=96 | acc=0.6115 | ips=0.20
+img=158 | ref=index:157 | score=0.978790 | pred=ai-generated | gt=real | ok=0 | ai=62 | real=96 | acc=0.6076 | ips=0.20
+img=159 | ref=index:158 | score=0.000314 | pred=real | gt=real | ok=1 | ai=62 | real=97 | acc=0.6101 | ips=0.20
+img=160 | ref=index:159 | score=0.000000 | pred=real | gt=real | ok=1 | ai=62 | real=98 | acc=0.6125 | ips=0.20
+img=161 | ref=index:160 | score=0.000000 | pred=real | gt=real | ok=1 | ai=62 | real=99 | acc=0.6149 | ips=0.20
+img=162 | ref=index:161 | score=0.000003 | pred=real | gt=real | ok=1 | ai=62 | real=100 | acc=0.6173 | ips=0.20
+img=163 | ref=index:162 | score=0.999049 | pred=ai-generated | gt=real | ok=0 | ai=63 | real=100 | acc=0.6135 | ips=0.20
+img=164 | ref=index:163 | score=0.000030 | pred=real | gt=real | ok=1 | ai=63 | real=101 | acc=0.6159 | ips=0.20
+img=165 | ref=index:164 | score=0.918023 | pred=ai-generated | gt=real | ok=0 | ai=64 | real=101 | acc=0.6121 | ips=0.20
+img=166 | ref=index:165 | score=0.000000 | pred=real | gt=real | ok=1 | ai=64 | real=102 | acc=0.6145 | ips=0.20
+img=167 | ref=index:166 | score=0.789767 | pred=ai-generated | gt=real | ok=0 | ai=65 | real=102 | acc=0.6108 | ips=0.20
+img=168 | ref=index:167 | score=0.000042 | pred=real | gt=real | ok=1 | ai=65 | real=103 | acc=0.6131 | ips=0.20
+img=169 | ref=index:168 | score=0.004482 | pred=real | gt=real | ok=1 | ai=65 | real=104 | acc=0.6154 | ips=0.20
+img=170 | ref=index:169 | score=0.996529 | pred=ai-generated | gt=real | ok=0 | ai=66 | real=104 | acc=0.6118 | ips=0.20
+img=171 | ref=index:170 | score=0.095493 | pred=real | gt=real | ok=1 | ai=66 | real=105 | acc=0.6140 | ips=0.20
+img=172 | ref=index:171 | score=0.306581 | pred=real | gt=real | ok=1 | ai=66 | real=106 | acc=0.6163 | ips=0.20
+img=173 | ref=index:172 | score=0.000000 | pred=real | gt=real | ok=1 | ai=66 | real=107 | acc=0.6185 | ips=0.20
+img=174 | ref=index:173 | score=0.622982 | pred=ai-generated | gt=real | ok=0 | ai=67 | real=107 | acc=0.6149 | ips=0.20
+img=175 | ref=index:174 | score=0.999943 | pred=ai-generated | gt=real | ok=0 | ai=68 | real=107 | acc=0.6114 | ips=0.20
+img=176 | ref=index:175 | score=0.899190 | pred=ai-generated | gt=real | ok=0 | ai=69 | real=107 | acc=0.6080 | ips=0.20
+img=177 | ref=index:176 | score=0.325583 | pred=real | gt=real | ok=1 | ai=69 | real=108 | acc=0.6102 | ips=0.20
+img=178 | ref=index:177 | score=0.000231 | pred=real | gt=real | ok=1 | ai=69 | real=109 | acc=0.6124 | ips=0.20
+img=179 | ref=index:178 | score=0.000032 | pred=real | gt=real | ok=1 | ai=69 | real=110 | acc=0.6145 | ips=0.20
+img=180 | ref=index:179 | score=0.002534 | pred=real | gt=real | ok=1 | ai=69 | real=111 | acc=0.6167 | ips=0.20
+img=181 | ref=index:180 | score=0.466588 | pred=ai-generated | gt=real | ok=0 | ai=70 | real=111 | acc=0.6133 | ips=0.20
+img=182 | ref=index:181 | score=0.999999 | pred=ai-generated | gt=real | ok=0 | ai=71 | real=111 | acc=0.6099 | ips=0.20
+img=183 | ref=index:182 | score=0.000274 | pred=real | gt=real | ok=1 | ai=71 | real=112 | acc=0.6120 | ips=0.20
+img=184 | ref=index:183 | score=0.927156 | pred=ai-generated | gt=real | ok=0 | ai=72 | real=112 | acc=0.6087 | ips=0.20
+img=185 | ref=index:184 | score=0.000000 | pred=real | gt=real | ok=1 | ai=72 | real=113 | acc=0.6108 | ips=0.20
+img=186 | ref=index:185 | score=0.301648 | pred=real | gt=real | ok=1 | ai=72 | real=114 | acc=0.6129 | ips=0.20
+img=187 | ref=index:186 | score=0.000000 | pred=real | gt=real | ok=1 | ai=72 | real=115 | acc=0.6150 | ips=0.20
+img=188 | ref=index:187 | score=0.890836 | pred=ai-generated | gt=real | ok=0 | ai=73 | real=115 | acc=0.6117 | ips=0.20
+img=189 | ref=index:188 | score=0.000004 | pred=real | gt=real | ok=1 | ai=73 | real=116 | acc=0.6138 | ips=0.20
+img=190 | ref=index:189 | score=0.000018 | pred=real | gt=real | ok=1 | ai=73 | real=117 | acc=0.6158 | ips=0.20
+img=191 | ref=index:190 | score=0.136549 | pred=real | gt=real | ok=1 | ai=73 | real=118 | acc=0.6178 | ips=0.20
+img=192 | ref=index:191 | score=0.009864 | pred=real | gt=real | ok=1 | ai=73 | real=119 | acc=0.6198 | ips=0.20
+img=193 | ref=index:192 | score=0.981218 | pred=ai-generated | gt=real | ok=0 | ai=74 | real=119 | acc=0.6166 | ips=0.20
+img=194 | ref=index:193 | score=0.894002 | pred=ai-generated | gt=real | ok=0 | ai=75 | real=119 | acc=0.6134 | ips=0.20
+img=195 | ref=index:194 | score=0.000000 | pred=real | gt=real | ok=1 | ai=75 | real=120 | acc=0.6154 | ips=0.20
+img=196 | ref=index:195 | score=0.676185 | pred=ai-generated | gt=real | ok=0 | ai=76 | real=120 | acc=0.6122 | ips=0.20
+img=197 | ref=index:196 | score=0.700066 | pred=ai-generated | gt=real | ok=0 | ai=77 | real=120 | acc=0.6091 | ips=0.20
+img=198 | ref=index:197 | score=0.000047 | pred=real | gt=real | ok=1 | ai=77 | real=121 | acc=0.6111 | ips=0.20
+img=199 | ref=index:198 | score=0.999772 | pred=ai-generated | gt=real | ok=0 | ai=78 | real=121 | acc=0.6080 | ips=0.20
+img=200 | ref=index:199 | score=0.000000 | pred=real | gt=real | ok=1 | ai=78 | real=122 | acc=0.6100 | ips=0.20
+Finished inference: total=200, ai=78, real=122, with_gt=200, correct=122, elapsed=976.47s, avg_ips=0.20
+CSV results saved to /tmp/spai_hf_ai_vs_real_200_20260418_215050/results.csv
+JSONL results saved to /tmp/spai_hf_ai_vs_real_200_20260418_215050/results.jsonl
+Run summary saved to /tmp/spai_hf_ai_vs_real_200_20260418_215050/results.summary.json
+
+real	16m30,440s
+user	62m57,210s
+sys	1m51,180s
+
+[OK] Ejecución finalizada
+[OK] CSV:          /tmp/spai_hf_ai_vs_real_200_20260418_215050/results.csv
+[OK] JSONL:        /tmp/spai_hf_ai_vs_real_200_20260418_215050/results.jsonl
+[OK] Log completo: /tmp/spai_hf_ai_vs_real_200_20260418_215050/run.log

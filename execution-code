@@ -1,0 +1,1 @@
+python advanced_image_scraper_differential.py --interactive-batch --crawl-site --max-pages 20 --max-input-urls 20 --min-pages-success 1

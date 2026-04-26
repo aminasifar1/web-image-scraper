@@ -1,0 +1,161 @@
+==================================
+Corporate Crawler - SLURM Job
+==================================
+
+Job ID: 110760
+Start time: jue 16 abr 2026 20:01:17 CEST
+
+Pre-run checks:
+  ✓ Website CSV found: /fhome/aaasidar/spai-hf/websites_5_categories.csv
+  ✓ Websites to crawl: 24
+
+Parameters:
+  Output directory: /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117/live
+  Base output directory: /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117
+  Max images per site: 50
+  Max pages per site: 10
+  Delay between requests: 2.0 seconds
+  Cleaning: min 180x180, area>=50000, bytes>=4000, ratio[0.33,3.0]
+  Organized storage: true
+  Reject sticker-like: true
+  Reject video thumbnails: true
+  Drop duplicate content: true
+  Drop near duplicates: true (hash_size=16, hamming<=12)
+  Wayback enabled: false
+  Wayback years: 2020 2021 2022 2023 2024
+  JS rendering: true
+  Respect robots.txt: true
+  Rotate User-Agent: true
+  Require semantic alt/caption: true (min chars: 8)
+  News classification: true
+  News threshold: 0.6
+  News max images: 0
+  News analysis dir: /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117/news_analysis
+
+Starting crawl...
+---
+2026-04-16 20:01:19,058 | INFO     | Corporate Crawler starting
+2026-04-16 20:01:19,059 | INFO     | Loaded 25 websites from /fhome/aaasidar/spai-hf/websites_5_categories.csv
+2026-04-16 20:01:19,059 | INFO     | Starting crawl of 25 websites
+2026-04-16 20:01:19,060 | INFO     | Wayback enabled: False, years: [2020, 2021, 2022, 2023, 2024]
+2026-04-16 20:01:19,060 | INFO     | Output directory: /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117/live
+2026-04-16 20:01:19,060 | INFO     | Incremental mode: existing hashes=0, next filename index=1
+2026-04-16 20:01:19,060 | INFO     | [LIVE] Starting crawl: El Pais (https://elpais.com)
+2026-04-16 20:02:11,669 | INFO     | ✓ [LIVE] El Pais: 8 images
+2026-04-16 20:02:11,669 | INFO     | [LIVE] Starting crawl: BBC News (https://www.bbc.com/news)
+2026-04-16 20:02:38,646 | INFO     | ✓ [LIVE] BBC News: 50 images
+2026-04-16 20:02:38,647 | INFO     | [LIVE] Starting crawl: La Vanguardia (https://www.lavanguardia.com)
+2026-04-16 20:03:28,277 | INFO     | ✓ [LIVE] La Vanguardia: 50 images
+2026-04-16 20:03:28,277 | INFO     | [LIVE] Starting crawl: New York Times (https://www.nytimes.com)
+2026-04-16 20:04:35,404 | INFO     | ✓ [LIVE] New York Times: 34 images
+2026-04-16 20:04:35,404 | INFO     | [LIVE] Starting crawl: RTVE Noticias (https://www.rtve.es/noticias)
+2026-04-16 20:04:44,002 | INFO     | ✓ [LIVE] RTVE Noticias: 50 images
+2026-04-16 20:04:44,003 | INFO     | [LIVE] Starting crawl: Flickr (https://www.flickr.com)
+2026-04-16 20:04:44,245 | WARNING  | ✗ [LIVE] Flickr: No images
+2026-04-16 20:04:44,246 | INFO     | [LIVE] Starting crawl: Tumblr (https://www.tumblr.com)
+2026-04-16 20:05:51,640 | INFO     | ✓ [LIVE] Tumblr: 26 images
+2026-04-16 20:05:51,641 | INFO     | [LIVE] Starting crawl: LinkedIn (https://www.linkedin.com)
+2026-04-16 20:05:52,051 | WARNING  | ✗ [LIVE] LinkedIn: No images
+2026-04-16 20:05:52,051 | INFO     | [LIVE] Starting crawl: Reddit (https://www.reddit.com)
+2026-04-16 20:05:52,126 | WARNING  | ✗ [LIVE] Reddit: No images
+2026-04-16 20:05:52,127 | INFO     | [LIVE] Starting crawl: Pinterest (https://www.pinterest.com)
+2026-04-16 20:06:57,334 | INFO     | ✓ [LIVE] Pinterest: 7 images
+2026-04-16 20:06:57,334 | INFO     | [LIVE] Starting crawl: ArtStation (https://www.artstation.com)
+2026-04-16 20:06:57,418 | WARNING  | ✗ [LIVE] ArtStation: No images
+2026-04-16 20:06:57,419 | INFO     | [LIVE] Starting crawl: DeviantArt (https://www.deviantart.com)
+2026-04-16 20:08:05,923 | INFO     | ✓ [LIVE] DeviantArt: 6 images
+2026-04-16 20:08:05,923 | INFO     | [LIVE] Starting crawl: Dribbble (https://dribbble.com)
+2026-04-16 20:08:06,184 | WARNING  | ✗ [LIVE] Dribbble: No images
+2026-04-16 20:08:06,184 | INFO     | [LIVE] Starting crawl: Pixiv (https://www.pixiv.net)
+2026-04-16 20:08:06,283 | WARNING  | ✗ [LIVE] Pixiv: No images
+2026-04-16 20:08:06,284 | INFO     | [LIVE] Starting crawl: Behance (https://www.behance.net)
+2026-04-16 20:09:03,644 | INFO     | ✓ [LIVE] Behance: 50 images
+2026-04-16 20:09:03,645 | INFO     | [LIVE] Starting crawl: Universitat Autonoma de Barcelona (https://www.uab.cat)
+2026-04-16 20:09:57,228 | INFO     | ✓ [LIVE] Universitat Autonoma de Barcelona: 33 images
+2026-04-16 20:09:57,229 | INFO     | [LIVE] Starting crawl: Universitat Politecnica de Catalunya (https://www.upc.edu/ca)
+2026-04-16 20:11:12,250 | INFO     | ✓ [LIVE] Universitat Politecnica de Catalunya: 30 images
+2026-04-16 20:11:12,251 | INFO     | [LIVE] Starting crawl: Stanford University (https://www.stanford.edu)
+2026-04-16 20:11:52,752 | INFO     | ✓ [LIVE] Stanford University: 50 images
+2026-04-16 20:11:52,752 | INFO     | [LIVE] Starting crawl: University of Oxford (https://www.ox.ac.uk)
+2026-04-16 20:11:52,898 | WARNING  | ✗ [LIVE] University of Oxford: No images
+2026-04-16 20:11:52,898 | INFO     | [LIVE] Starting crawl: MIT (https://www.mit.edu)
+2026-04-16 20:12:40,943 | INFO     | ✓ [LIVE] MIT: 5 images
+2026-04-16 20:12:40,943 | INFO     | [LIVE] Starting crawl: Apple (https://www.apple.com)
+2026-04-16 20:14:02,125 | INFO     | ✓ [LIVE] Apple: 20 images
+2026-04-16 20:14:02,126 | INFO     | [LIVE] Starting crawl: Microsoft (https://www.microsoft.com)
+2026-04-16 20:16:56,880 | INFO     | ✓ [LIVE] Microsoft: 50 images
+2026-04-16 20:16:56,880 | INFO     | [LIVE] Starting crawl: Google (https://about.google)
+2026-04-16 20:18:41,259 | INFO     | ✓ [LIVE] Google: 4 images
+2026-04-16 20:18:41,259 | INFO     | [LIVE] Starting crawl: IBM (https://www.ibm.com)
+2026-04-16 20:20:56,097 | INFO     | ✓ [LIVE] IBM: 29 images
+2026-04-16 20:20:56,097 | INFO     | [LIVE] Starting crawl: Adobe (https://www.adobe.com)
+2026-04-16 20:21:11,350 | WARNING  |   Failed to fetch https://www.adobe.com/: HTTPSConnectionPool(host='www.adobe.com', port=443): Read timed out. (read timeout=15.0)
+2026-04-16 20:21:11,350 | WARNING  | ✗ [LIVE] Adobe: No images
+2026-04-16 20:21:11,398 | INFO     | ✓ Generated metadata CSV: /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117/live/images_metadata_20260416_202111.csv
+2026-04-16 20:21:11,398 | INFO     | ================================================================================
+2026-04-16 20:21:11,398 | INFO     | CRAWL SUMMARY
+2026-04-16 20:21:11,398 | INFO     | ================================================================================
+2026-04-16 20:21:11,398 | INFO     |   Websites attempted:          25
+2026-04-16 20:21:11,398 | INFO     |   Websites successful:         17
+2026-04-16 20:21:11,398 | INFO     |   Pages crawled:               142
+2026-04-16 20:21:11,398 | INFO     |   Images found (post-filters): 2015
+2026-04-16 20:21:11,398 | INFO     |   Images filtered (ads):       1491
+2026-04-16 20:21:11,398 | INFO     |   Images filtered (ui/icon):   1010
+2026-04-16 20:21:11,398 | INFO     |   Images filtered (quality):   125
+2026-04-16 20:21:11,398 | INFO     |   Images filtered (sticker):   4
+2026-04-16 20:21:11,398 | INFO     |   Images filtered (video):     216
+2026-04-16 20:21:11,399 | INFO     |   Images filtered (near-dup):  566
+2026-04-16 20:21:11,399 | INFO     |   Images filtered (no alt):    602
+2026-04-16 20:21:11,399 | INFO     |   Images skipped (duplicate):  0
+2026-04-16 20:21:11,399 | INFO     |   Images downloaded:           502
+2026-04-16 20:21:11,399 | INFO     |   Pages skipped (robots):      8
+2026-04-16 20:21:11,399 | INFO     |   Wayback snapshots crawled:   0
+2026-04-16 20:21:11,399 | INFO     |   Total time:                  0:19:52.291407
+2026-04-16 20:21:11,399 | INFO     | ================================================================================
+2026-04-16 20:21:11,549 | INFO     | Crawl completed successfully
+---
+
+Crawl Summary:
+  Stats file: /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117/live/stats_20260416_202111.json
+  Total images downloaded: 502
+  Metadata entries: 548
+  Metadata file: /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117/live/images_metadata_20260416_202111.csv
+
+Running news classification and graphics...
+=> merge config from /fhome/aaasidar/spai-hf/configs/spai.yaml
+{
+  "metadata_csv": "/export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117/live/images_metadata_20260416_202111.csv",
+  "selected_news_rows": 192,
+  "classified": 192,
+  "failed": 0,
+  "threshold": 0.6,
+  "ai_count": 28,
+  "real_count": 164,
+  "score_mean": 0.16277949041825554,
+  "score_median": 8.066025145581079e-07,
+  "score_min": 0.0,
+  "score_max": 1.0,
+  "artifacts": {
+    "predictions_csv": "/export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117/news_analysis/news_predictions.csv",
+    "score_plot": "/export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117/news_analysis/score.png",
+    "score_histogram": "/export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117/news_analysis/score_histogram.png",
+    "testing_graphics": "/export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117/news_analysis/testing_graphics.png"
+  }
+}
+  ✓ News analysis generated:
+    - /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117/news_analysis/score.png
+    - /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117/news_analysis/score_histogram.png
+    - /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117/news_analysis/testing_graphics.png
+    - /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117/news_analysis/news_predictions.csv
+
+Downloaded images location: /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117/live/images/
+  Total image files: 502
+  Sample images:
+    /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117/live/images/social_media/www.pinterest.com/live/image_00000219.png
+    /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117/live/images/social_media/www.pinterest.com/live/image_00000222.jpg
+    /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117/live/images/social_media/www.pinterest.com/live/image_00000221.png
+    /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117/live/images/social_media/www.pinterest.com/live/image_00000223.png
+
+End time: jue 16 abr 2026 20:56:21 CEST
+Run artifact root: /export/fhome/aaasidar/spai-hf/crawl_runs/20260416_5x5_200117
+✓ Job completed successfully

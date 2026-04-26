@@ -1,0 +1,21 @@
+{
+  "rows": 423,
+  "score_mean": 0.4127648107156211,
+  "score_median": 0.2813305258750915,
+  "score_min": 1.4211723638009138e-23,
+  "score_max": 1.0,
+  "histogram_file": "IA_testing/model_graphs_output_109520/image/histogram_scores.png",
+  "score_curve_file": "IA_testing/model_graphs_output_109520/image/score_curve.png",
+  "confusion_network_file": "IA_testing/model_graphs_output_109520/image/confusion_network.png",
+  "accuracy_curve_file": "IA_testing/model_graphs_output_109520/image/accuracy_curve.png",
+  "loss_curve_file": "IA_testing/model_graphs_output_109520/image/loss_curve.png",
+  "scatter_pred_vs_actual_file": "IA_testing/model_graphs_output_109520/image/scatter_predicted_vs_actual.png",
+  "final_accuracy": 0.3806146572104019,
+  "final_loss": 4.289265866590611,
+  "confusion_counts": {
+    "TN": 0,
+    "FP": 0,
+    "FN": 262,
+    "TP": 161
+  }
+}

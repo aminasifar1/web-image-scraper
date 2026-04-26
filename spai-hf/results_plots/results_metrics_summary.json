@@ -1,0 +1,27 @@
+{
+  "csv_path": "results.csv",
+  "rows": 423,
+  "score_column": "score",
+  "prediction_column": "predicted_label",
+  "ground_truth_column": "gt_label",
+  "threshold": 0.6,
+  "accuracy": 0.3806146572104019,
+  "predicted_counts": {
+    "0": 262,
+    "1": 161
+  },
+  "ground_truth_counts": {
+    "1": 423
+  },
+  "score_min": 1.4211723638009138e-23,
+  "score_max": 1.0,
+  "score_mean": 0.4127648107156211,
+  "score_median": 0.2813305258750915,
+  "artifacts": {
+    "score_histogram": "results_plots/score_histogram.png",
+    "test_accuracy": "results_plots/test_accuracy.png",
+    "real_vs_ai_bars": "results_plots/real_vs_ai_bars.png",
+    "confusion_matrix": "results_plots/confusion_matrix.png",
+    "overview": "results_plots/results_overview.png"
+  }
+}
