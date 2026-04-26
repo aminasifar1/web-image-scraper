@@ -1,0 +1,26 @@
+url,sector,subsector,organization_name
+https://elpais.com/,news,newspaper,El Pais
+https://www.bbc.co.uk/news,news,broadcaster,BBC News
+https://www.lavanguardia.com,news,newspaper,La Vanguardia
+https://www.nytimes.com,news,newspaper,New York Times
+https://www.rtve.es/noticias,news,newspaper,RTVE Noticias
+https://www.flickr.com,social_media,photo_hosting,Flickr
+https://www.tumblr.com,social_media,microblog,Tumblr
+https://www.linkedin.com,social_media,professional_network,LinkedIn
+https://www.reddit.com,social_media,discussion_forum,Reddit
+https://www.pinterest.com,social_media,visual_discovery,Pinterest
+https://www.artstation.com,arts_illustration,digital_portfolio,ArtStation
+https://www.deviantart.com,arts_illustration,artist_community,DeviantArt
+https://dribbble.com,arts_illustration,design_showcase,Dribbble
+https://www.pixiv.net,arts_illustration,illustration_community,Pixiv
+https://www.behance.net,arts_illustration,creative_portfolio,Behance
+https://www.uab.cat,education_institution,university,Universitat Autonoma de Barcelona
+https://www.upc.edu/ca,education_institution,university,Universitat Politecnica de Catalunya
+https://www.stanford.edu,education_institution,university,Stanford University
+https://www.ox.ac.uk,education_institution,university,University of Oxford
+https://www.mit.edu,education_institution,university,MIT
+https://www.apple.com,corporate,technology_company,Apple
+https://www.microsoft.com,corporate,technology_company,Microsoft
+https://about.google,corporate,technology_company,Google
+https://www.ibm.com,corporate,technology_company,IBM
+https://www.adobe.com,corporate,technology_company,Adobe
