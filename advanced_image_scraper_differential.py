@@ -46,16 +46,6 @@ DEFAULT_USER_AGENTS = [
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Safari/605.1.15",
 ]
 
-# Semillas por dominio para mejorar cobertura cuando sitemap no ayuda.
-DEFAULT_DOMAIN_SEEDS: Dict[str, List[str]] = {
-    "dribbble.com": ["/shots/popular", "/shots/recent", "/discover", "/stories"],
-    "www.behance.net": ["/galleries", "/joblist", "/assets"],
-    "www.deviantart.com": ["/daily-deviations", "/popular-all-time", "/newest"],
-    "www.artstation.com": ["/trending", "/search/projects", "/marketplace"],
-    "www.pinterest.com": ["/ideas", "/today", "/search/pins/?q=design"],
-}
-
-
 def _slug_from_url(url: str) -> str:
     parsed = urlparse(url)
     host = (parsed.netloc or "site").lower().replace(".", "-")
@@ -122,17 +112,14 @@ class DifferentialImageScraper(AdvancedImageScraper):
         self.session.mount("https://", adapter)
 
     def _load_domain_seeds(self, seed_config_path: Optional[str]) -> Dict[str, List[str]]:
-        seed_map: Dict[str, List[str]] = {
-            domain.lower(): list(paths)
-            for domain, paths in DEFAULT_DOMAIN_SEEDS.items()
-        }
+        seed_map: Dict[str, List[str]] = {}
         if not seed_config_path:
             return seed_map
 
         try:
             config_path = Path(seed_config_path)
             if not config_path.exists():
-                logger.warning(f"No existe seed-config en {seed_config_path}; se usan semillas por defecto")
+                logger.warning(f"No existe seed-config en {seed_config_path}; se omiten semillas manuales")
                 return seed_map
 
             payload = json.loads(config_path.read_text(encoding="utf-8"))
@@ -151,6 +138,82 @@ class DifferentialImageScraper(AdvancedImageScraper):
             logger.warning(f"No se pudo leer seed-config ({seed_config_path}): {exc}")
 
         return seed_map
+
+    def _discover_robots_sitemaps(self, root_url: str) -> List[str]:
+        """Lee robots.txt para descubrir sitemaps declarados explícitamente."""
+        parsed = urlparse(root_url)
+        if not parsed.scheme or not parsed.netloc:
+            return []
+
+        robots_url = f"{parsed.scheme}://{parsed.netloc}/robots.txt"
+        try:
+            response = self.session.get(robots_url, timeout=10, headers=self._random_headers())
+            if response.status_code != 200 or not response.text:
+                return []
+        except Exception:
+            return []
+
+        discovered: List[str] = []
+        seen: Set[str] = set()
+        for raw_line in response.text.splitlines():
+            stripped = raw_line.strip()
+            if not stripped.lower().startswith("sitemap:"):
+                continue
+            candidate = stripped.split(":", 1)[1].strip()
+            if not candidate or candidate in seen:
+                continue
+            seen.add(candidate)
+            discovered.append(candidate)
+        return discovered
+
+    def _discover_entry_urls(self, root_url: str, allowed_domains: Set[str], max_links: int = 120) -> List[str]:
+        """Combina sitemap, robots y home para encontrar automáticamente la mejor entrada."""
+        discovered: List[str] = []
+        seen: Set[str] = set()
+
+        def add(candidate_url: str) -> None:
+            normalized = self._normalize_internal_link(root_url, candidate_url, allowed_domains)
+            if not normalized or normalized in seen:
+                return
+            seen.add(normalized)
+            discovered.append(normalized)
+
+        parsed = urlparse(root_url)
+        root_host = parsed.netloc.lower()
+        registrable_domain = self._registrable_domain(root_host)
+
+        add(root_url)
+        if registrable_domain:
+            add(f"{parsed.scheme}://{registrable_domain}/")
+            add(f"{parsed.scheme}://www.{registrable_domain}/")
+
+        for sitemap_url in self._discover_robots_sitemaps(root_url):
+            add(sitemap_url)
+
+        home_links = self._discover_home_links(root_url, allowed_domains, max_links=max_links)
+        for link_url in home_links:
+            add(link_url)
+
+        try:
+            response = self._fetch_page(root_url)
+        except Exception:
+            response = None
+
+        if response is not None:
+            soup = BeautifulSoup(response.text, "html.parser")
+            for selector in [
+                'link[rel="canonical"]',
+                'link[rel="alternate"]',
+                'link[rel="amphtml"]',
+                'meta[property="og:url"]',
+                'meta[name="twitter:url"]',
+            ]:
+                for element in soup.select(selector):
+                    candidate = element.get("href") or element.get("content")
+                    if candidate:
+                        add(candidate)
+
+        return discovered[:max_links]
 
     def _discover_home_links(self, root_url: str, allowed_domains: Set[str], max_links: int = 120) -> List[str]:
         """Fallback de descubrimiento desde home cuando el sitemap no aporta URLs."""
@@ -277,10 +340,15 @@ class DifferentialImageScraper(AdvancedImageScraper):
         logger.info(f"Iniciando scraping diferencial de {url}")
 
         visited_urls = set()
-        allowed_domains = {urlparse(url).netloc.lower()}
+        parsed_root = urlparse(url)
+        allowed_domains = {parsed_root.netloc.lower()}
+        registrable_domain = self._registrable_domain(parsed_root.netloc)
+        if registrable_domain:
+            allowed_domains.add(registrable_domain)
+
         to_visit = [url]
         sitemap_urls: List[str] = []
-        home_fallback_urls: List[str] = []
+        entry_urls: List[str] = []
         manual_seed_urls: List[str] = []
         skipped_by_robots = 0
         page_download_errors = 0
@@ -299,13 +367,12 @@ class DifferentialImageScraper(AdvancedImageScraper):
 
         if crawl_site:
             sitemap_urls = self._discover_sitemap_urls(url, allowed_domains, limit=sitemap_limit)
-            if not sitemap_urls:
-                home_fallback_urls = self._discover_home_links(url, allowed_domains, max_links=120)
+            entry_urls = self._discover_entry_urls(url, allowed_domains, max_links=120)
             manual_seed_urls = self._manual_seed_urls_for_domain(url, allowed_domains)
 
             merged_discovery: List[str] = []
             seen_discovery: Set[str] = set()
-            for candidate in sitemap_urls + home_fallback_urls + manual_seed_urls + to_visit:
+            for candidate in to_visit + sitemap_urls + entry_urls + manual_seed_urls:
                 if candidate in seen_discovery:
                     continue
                 seen_discovery.add(candidate)
@@ -313,8 +380,6 @@ class DifferentialImageScraper(AdvancedImageScraper):
             to_visit = merged_discovery
 
         initial_queue_size = len(to_visit)
-
-        to_visit = self._prioritize_to_visit_queue(to_visit, visited_urls)
         pages_processed = 0
 
         while to_visit and pages_processed < page_limit:
@@ -377,7 +442,7 @@ class DifferentialImageScraper(AdvancedImageScraper):
             "requested_max_pages": int(max_pages),
             "effective_page_limit": int(page_limit),
             "sitemap_urls_discovered": len(sitemap_urls),
-            "home_fallback_urls_discovered": len(home_fallback_urls),
+            "entry_urls_discovered": len(entry_urls),
             "manual_seed_urls_added": len(manual_seed_urls),
             "skipped_by_robots": int(skipped_by_robots),
             "page_download_errors": int(page_download_errors),
@@ -392,12 +457,12 @@ class DifferentialImageScraper(AdvancedImageScraper):
             if crawl_site and not sitemap_urls:
                 no_crawl_reason_codes.append("SITEMAP_EMPTY")
                 reasons.append("no se descubrieron URLs desde sitemap")
-                if home_fallback_urls:
-                    no_crawl_reason_codes.append("HOME_FALLBACK_DISCOVERED")
-                    reasons.append(f"fallback home encontró {len(home_fallback_urls)} URL(s)")
+                if entry_urls:
+                    no_crawl_reason_codes.append("AUTO_ENTRY_DISCOVERED")
+                    reasons.append(f"la entrada automática encontró {len(entry_urls)} URL(s)")
                 else:
-                    no_crawl_reason_codes.append("HOME_FALLBACK_EMPTY")
-                    reasons.append("fallback home no encontró enlaces válidos")
+                    no_crawl_reason_codes.append("AUTO_ENTRY_EMPTY")
+                    reasons.append("la entrada automática no encontró enlaces válidos")
             if crawl_site and manual_seed_urls:
                 no_crawl_reason_codes.append("MANUAL_SEEDS_AVAILABLE")
                 reasons.append(f"semillas manuales añadidas: {len(manual_seed_urls)} URL(s)")
@@ -591,7 +656,7 @@ def main():
             f"max_pages_solicitado={ctx.get('requested_max_pages')} | "
             f"max_pages_efectivo={ctx.get('effective_page_limit')} | "
             f"sitemaps={ctx.get('sitemap_urls_discovered')} | "
-            f"home_fallback={ctx.get('home_fallback_urls_discovered')} | "
+            f"entry_urls={ctx.get('entry_urls_discovered')} | "
             f"manual_seeds={ctx.get('manual_seed_urls_added')} | "
             f"robots_skips={ctx.get('skipped_by_robots')} | "
             f"fetch_errors={ctx.get('page_download_errors')} | "

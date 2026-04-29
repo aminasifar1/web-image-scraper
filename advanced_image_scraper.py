@@ -228,6 +228,46 @@ class ImageMetadata:
 
 class AdvancedImageScraper:
     """Scraper avanzado de imágenes con soporte para múltiples formatos HTML"""
+
+    @staticmethod
+    def _registrable_domain(host: str) -> str:
+        """Devuelve una heurística del dominio raíz para aceptar subdominios relacionados."""
+        cleaned_host = (host or "").lower().strip('.')
+        if not cleaned_host:
+            return ""
+
+        parts = [part for part in cleaned_host.split('.') if part]
+        if len(parts) <= 2:
+            return cleaned_host
+
+        common_second_level_suffixes = {
+            'ac', 'co', 'com', 'edu', 'gov', 'ltd', 'me', 'net', 'org', 'plc', 'sch'
+        }
+        if len(parts[-1]) == 2 and parts[-2] in common_second_level_suffixes:
+            return '.'.join(parts[-3:])
+
+        return '.'.join(parts[-2:])
+
+    @staticmethod
+    def _host_matches_allowed_domain(candidate_host: str, allowed_domains: Set[str]) -> bool:
+        """Comprueba si un host pertenece al sitio permitido o a uno de sus subdominios."""
+        normalized_candidate = (candidate_host or '').lower().strip('.')
+        if not normalized_candidate:
+            return False
+
+        normalized_allowed = {
+            domain.lower().strip('.')
+            for domain in allowed_domains
+            if domain
+        }
+
+        if normalized_candidate in normalized_allowed:
+            return True
+
+        return any(
+            normalized_candidate.endswith(f'.{allowed_domain}')
+            for allowed_domain in normalized_allowed
+        )
     
     def __init__(
         self,
@@ -741,7 +781,7 @@ class AdvancedImageScraper:
             parsed = urlparse(normalized)
             if parsed.scheme not in {'http', 'https'}:
                 return
-            if allowed_domains and parsed.netloc.lower() not in allowed_domains:
+            if allowed_domains and not self._host_matches_allowed_domain(parsed.netloc, allowed_domains):
                 return
 
             path = (parsed.path or '').lower()
@@ -820,7 +860,7 @@ class AdvancedImageScraper:
         parsed = urlparse(resolved)
         if parsed.scheme not in {'http', 'https'}:
             return None
-        if allowed_domains and parsed.netloc.lower() not in allowed_domains:
+        if allowed_domains and not self._host_matches_allowed_domain(parsed.netloc, allowed_domains):
             return None
         return resolved
 
@@ -1034,12 +1074,15 @@ class AdvancedImageScraper:
         logger.info(f"Iniciando scraping de {url}")
         
         visited_urls = set()
-        allowed_domains = {urlparse(url).netloc.lower()}
+        root_host = urlparse(url).netloc.lower()
+        allowed_domains = {root_host}
+        registrable_domain = self._registrable_domain(root_host)
+        if registrable_domain:
+            allowed_domains.add(registrable_domain)
         to_visit = [url]
         if crawl_site:
             sitemap_urls = self._discover_sitemap_urls(url, allowed_domains, limit=max_pages * 20)
-            to_visit = sitemap_urls + to_visit
-        to_visit = self._prioritize_to_visit_queue(to_visit, visited_urls)
+            to_visit = [url] + [candidate for candidate in sitemap_urls if candidate != url]
         pages_processed = 0
         
         # Evitar crawls infinitos: si max_pages <= 0, aplicar límite de seguridad
