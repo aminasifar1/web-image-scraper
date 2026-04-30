@@ -93,6 +93,7 @@ def load_sites_from_csv(csv_path: Path) -> List[str]:
     sites = []
     with csv_path.open("r", encoding="utf-8") as fh:
         reader = csv.reader(fh)
+        next(reader, None)  # Saltar encabezado
         for row in reader:
             if not row:
                 continue
