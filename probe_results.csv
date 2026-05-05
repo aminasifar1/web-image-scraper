@@ -1,0 +1,11 @@
+url,status,http_status,n_img_tags,n_unique_img_urls,sample_img_urls,elapsed,error
+https://elpais.com/,ok,200,141,0,,0.48645520210266113,
+https://www.bbc.co.uk/news,ok,200,119,0,,0.21598100662231445,
+https://www.lavanguardia.com,ok,200,138,0,,0.17188096046447754,
+https://www.nytimes.com,ok,200,44,0,,0.2698659896850586,
+https://www.rtve.es/noticias,ok,200,131,0,,0.2003769874572754,
+https://www.flickr.com,ok,200,39,0,,0.2032020092010498,
+https://www.tumblr.com,ok,200,0,0,,0.32828187942504883,
+https://www.linkedin.com,ok,200,7,0,,0.628403902053833,
+https://www.reddit.com,error,,0,0,,0.09324193000793457,HTTP Error 403: Blocked
+https://www.pinterest.com,ok,200,0,0,,0.7659759521484375,

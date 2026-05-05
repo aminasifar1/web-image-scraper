@@ -1,0 +1,18 @@
+url,sector,subsector,organization_name
+https://www.flickr.com,social_media,photo_hosting,Flickr
+https://www.flickr.com/commons,social_media,public_heritage_images,Flickr Commons
+https://commons.wikimedia.org,open_image_library,public_domain_archive,Wikimedia Commons
+https://www.loc.gov/pictures/,public_archive,library_collection,Library of Congress Pictures
+https://www.rijksmuseum.nl/en/collection,museum_collection,open_access,Rijksmuseum Collection
+https://www.europeana.eu,enrichment_archive,cultural_heritage,Europeana
+https://www.metmuseum.org/art/collection,museum_collection,open_access,The Met Collection
+https://www.si.edu/openaccess,museum_collection,open_access,Smithsonian Open Access
+https://images.nasa.gov,public_archive,space_media,NASA Image and Video Library
+https://openverse.org,open_image_library,creative_commons_search,Openverse
+https://unsplash.com,open_image_library,stock_photography,Unsplash
+https://www.pexels.com,open_image_library,stock_photography,Pexels
+https://pixabay.com,open_image_library,stock_photography,Pixabay
+https://www.deviantart.com,arts_illustration,artist_community,DeviantArt
+https://dribbble.com,arts_illustration,design_showcase,Dribbble
+https://www.behance.net,arts_illustration,creative_portfolio,Behance
+https://www.artstation.com,arts_illustration,digital_portfolio,ArtStation

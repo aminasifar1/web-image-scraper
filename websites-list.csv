@@ -24,3 +24,15 @@ https://www.microsoft.com,corporate,technology_company,Microsoft
 https://about.google,corporate,technology_company,Google
 https://www.ibm.com,corporate,technology_company,IBM
 https://www.adobe.com,corporate,technology_company,Adobe
+https://commons.wikimedia.org,open_image_library,public_domain_archive,Wikimedia Commons
+https://openverse.org,open_image_library,creative_commons_search,Openverse
+https://unsplash.com,open_image_library,stock_photography,Unsplash
+https://www.pexels.com,open_image_library,stock_photography,Pexels
+https://pixabay.com,open_image_library,stock_photography,Pixabay
+https://www.metmuseum.org/art/collection,museum_collection,open_access,The Met Collection
+https://www.rijksmuseum.nl/en/collection,museum_collection,open_access,Rijksmuseum Collection
+https://www.si.edu/openaccess,museum_collection,open_access,Smithsonian Open Access
+https://www.europeana.eu,enrichment_archive,cultural_heritage,Europeana
+https://www.loc.gov/pictures/,public_archive,library_collection,Library of Congress Pictures
+https://images.nasa.gov,public_archive,space_media,NASA Image and Video Library
+https://www.flickr.com/commons,social_media,public_heritage_images,Flickr Commons
