@@ -1,0 +1,758 @@
+2026-05-06 09:39:31,169 - INFO - Iniciando scraping de https://www.rtve.es/noticias
+2026-05-06 09:39:31,169 - INFO - Procesando página 1/1: https://www.rtve.es/noticias
+2026-05-06 09:39:31,460 - INFO - Encontradas 92 imágenes en https://www.rtve.es/noticias
+2026-05-06 09:39:31,746 - INFO - Imagen guardada: 6ce3cb2f27f9b0fcd4612d4e092fd080.jpeg
+2026-05-06 09:39:31,801 - INFO - Imagen guardada: 22774d9649585e1fed35a246724196b5.jpeg
+2026-05-06 09:39:31,829 - INFO - Imagen guardada: 51f2f1df5148855134aef360a514c92a.jpeg
+2026-05-06 09:39:31,901 - INFO - Imagen guardada: e3efa95e2e035c851f8ae147b3ed5241.jpeg
+2026-05-06 09:39:31,924 - INFO - Imagen guardada: f1e8fc78895479aaf29c959ffa07ce74.jpeg
+2026-05-06 09:39:31,946 - INFO - Imagen guardada: 5b3a6de17fa4cea3a94d3fea23fab7cd.jpeg
+2026-05-06 09:39:31,968 - INFO - Imagen guardada: 1a12ca05b609090f808859ad0b789273.jpeg
+2026-05-06 09:39:32,020 - INFO - Imagen guardada: 2432c4a7b906a26e67ba991cbf3d169c.jpeg
+2026-05-06 09:39:32,051 - INFO - Imagen guardada: bf706d8adb82af3e02b6660723d76a56.jpeg
+2026-05-06 09:39:32,091 - INFO - Imagen guardada: e02522586c721968aa120e3f07aa6698.jpeg
+2026-05-06 09:39:32,113 - INFO - Imagen guardada: 6795fc2b79597aa6d6e74c43258217bd.jpeg
+2026-05-06 09:39:32,135 - INFO - Imagen guardada: 237437a3021283b664448c0640f74fee.jpeg
+2026-05-06 09:39:32,157 - INFO - Imagen guardada: d9a73d96150589dc19e7f7b322c44449.jpeg
+2026-05-06 09:39:32,180 - INFO - Imagen guardada: dc9dd179f28d1deb55659c71c243e2ca.jpeg
+2026-05-06 09:39:32,203 - INFO - Imagen guardada: f23b2b57150ee563e9e7b578260b7453.jpeg
+2026-05-06 09:39:32,226 - INFO - Imagen guardada: 10fb5f413d740fb5a38fec1999f7299d.jpeg
+2026-05-06 09:39:32,250 - INFO - Imagen guardada: d9673db29b6a6d364e21afef2de1da13.jpeg
+2026-05-06 09:39:32,275 - INFO - Imagen guardada: 9d17057531f844c379ded3bee866fafe.jpeg
+2026-05-06 09:39:32,339 - INFO - Imagen guardada: 72eeea7774cdb172550ee8a15bf0f3ff.jpeg
+2026-05-06 09:39:32,368 - INFO - Imagen guardada: 71f218b963a60a931da2393bb95fca7e.jpeg
+2026-05-06 09:39:32,391 - INFO - Imagen guardada: 89701341219dab7c5ddcb0d65bbef1f3.jpeg
+2026-05-06 09:39:32,414 - INFO - Imagen guardada: ec168b6b31211cb04cc1924b924b8cb3.jpeg
+2026-05-06 09:39:32,443 - INFO - Imagen guardada: 874eea3af84f64f7f00738d9ec991465.jpeg
+2026-05-06 09:39:32,468 - INFO - Imagen guardada: feb8824f4cc54f620411403e60a6fc62.jpeg
+2026-05-06 09:39:32,492 - INFO - Imagen guardada: 588713771ad1a7acbfbfa0e3db6c93b5.jpeg
+2026-05-06 09:39:32,516 - INFO - Imagen guardada: 0d9f1fc03d122e060b60084abe04bb9e.jpeg
+2026-05-06 09:39:32,544 - INFO - Imagen guardada: a664bff52d9c9b7407f7d3d960bb7605.jpeg
+2026-05-06 09:39:32,588 - INFO - Imagen guardada: 5176a85668e3e139c008079ab9e4f40f.jpeg
+2026-05-06 09:39:32,613 - INFO - Imagen guardada: 5f893b26361bd5a25dcb48e4cabccf67.jpeg
+2026-05-06 09:39:32,638 - INFO - Imagen guardada: 31951b02cdb84459b070c7ddddb632ce.jpeg
+2026-05-06 09:39:32,661 - INFO - Imagen guardada: 82358b8b0556f57b0366cfcb999957d1.jpeg
+2026-05-06 09:39:32,686 - INFO - Imagen guardada: e03b14e9a8ba6ff317edf2e9d56635ed.jpeg
+2026-05-06 09:39:32,709 - INFO - Imagen guardada: b3b4c95d3463a4bb2af43cb827297a5e.jpeg
+2026-05-06 09:39:32,754 - INFO - Imagen guardada: be5ba9fd9df0b2e2fed71127c05b91ea.png
+2026-05-06 09:39:32,775 - INFO - Imagen guardada: 41024642d41b1707c4dea9666371f72c.jpeg
+2026-05-06 09:39:32,796 - INFO - Imagen guardada: 104516c16bc5d689da26fc9a6f28e6d7.jpeg
+2026-05-06 09:39:32,817 - INFO - Imagen guardada: 3f9cd9b1ba31e58dbb0e415a76bfd7ee.jpeg
+2026-05-06 09:39:32,843 - INFO - Imagen guardada: 25fb93371ab154e3e310940b4fd5abc9.jpeg
+2026-05-06 09:39:32,866 - INFO - Imagen guardada: 320dbbe5c30ebb7295f8f3cd4488949d.jpeg
+2026-05-06 09:39:32,890 - INFO - Imagen guardada: 918fb4aea8edc15be185ec7523953370.jpeg
+2026-05-06 09:39:32,912 - INFO - Imagen guardada: 5215bbf9db83a6fc19089d1594bf8ea5.jpeg
+2026-05-06 09:39:32,935 - INFO - Imagen guardada: c1a3d0b56a84db603f2fb741d86b0c9e.jpeg
+2026-05-06 09:39:32,959 - INFO - Imagen guardada: 95a557347e9ce6e02aceef9e4edb05a7.jpeg
+2026-05-06 09:39:32,981 - INFO - Imagen guardada: 2110253853dd2e7912eb0c4faffce883.jpeg
+2026-05-06 09:39:33,004 - INFO - Imagen guardada: 37ff82e6897371b0f315775ace105488.jpeg
+2026-05-06 09:39:33,033 - INFO - Imagen guardada: 400c66f06de29377e30a16a3141e4107.jpeg
+2026-05-06 09:39:33,056 - INFO - Imagen guardada: 513d240f67f185a04eaf03763bbd28c2.jpeg
+2026-05-06 09:39:33,078 - INFO - Imagen guardada: 848db0391db883a9b31d0823be538cec.jpeg
+2026-05-06 09:39:33,101 - INFO - Imagen guardada: 244b6ff726dfa2a37b9ac5562375ba9a.jpeg
+2026-05-06 09:39:33,123 - INFO - Imagen guardada: c2e220b6a29abccf8573aaf2e64d6a28.jpeg
+2026-05-06 09:39:33,144 - INFO - Imagen guardada: 2d0d91a762786232ef7801351a1134c3.jpeg
+2026-05-06 09:39:33,165 - INFO - Imagen guardada: 400918d62f13fd63dc1ddbec9ff308a8.jpeg
+2026-05-06 09:39:33,188 - INFO - Imagen guardada: 28db6b34d7a0c67d00c2e2de866656f7.jpeg
+2026-05-06 09:39:33,215 - INFO - Imagen guardada: 670bfe048a50ef852be6122829e72ec4.jpeg
+2026-05-06 09:39:33,238 - INFO - Imagen guardada: b4d8df2dda11994a975e0f30f3162c67.jpeg
+2026-05-06 09:39:33,297 - INFO - Imagen guardada: 0458e8263d3ae10cf8dab745984dddb0.jpeg
+2026-05-06 09:39:33,321 - INFO - Imagen guardada: ed6c1c00c6391b5048e184f669ce4adf.jpeg
+2026-05-06 09:39:33,343 - INFO - Imagen guardada: aa9f4d913ba0d64c694c2f486f07064c.jpeg
+2026-05-06 09:39:33,369 - INFO - Imagen guardada: c5af9f4c1189b578736ee6ff0f3860ba.jpeg
+2026-05-06 09:39:33,408 - INFO - Imagen guardada: a385fe10d5cf0313432114b9fe8d754a.png
+2026-05-06 09:39:33,429 - INFO - Imagen guardada: 5cbcfc5111bbc2cf2c4d9fb0fff841d6.jpeg
+2026-05-06 09:39:33,455 - INFO - Imagen guardada: 12ff41873e5ccc48596183a89d93c14a.jpeg
+2026-05-06 09:39:33,477 - INFO - Imagen guardada: 75d12dd01527403fc5818f5d12c22757.jpeg
+2026-05-06 09:39:33,500 - INFO - Imagen guardada: 7da6744504bdc3f4e644e8b181400a27.jpeg
+2026-05-06 09:39:33,522 - INFO - Imagen guardada: 913be0331e77d0e8dfa6e3035ebaf209.jpeg
+2026-05-06 09:39:33,575 - INFO - Imagen guardada: a0df8d47f884de52bfe2a163129b75ea.jpeg
+2026-05-06 09:39:33,602 - INFO - Imagen guardada: 73ea74a58ced3922b1f02d0f84812ad3.jpeg
+2026-05-06 09:39:33,627 - INFO - Imagen guardada: 2bad26edddf83a2047f0791a4662269a.jpeg
+2026-05-06 09:39:33,649 - INFO - Imagen guardada: 7456b44c91f2e8a26738e3875b905129.jpeg
+2026-05-06 09:39:33,681 - INFO - Imagen guardada: 0499d24ad117e8e1f5534bb3e1c7ca1d.png
+2026-05-06 09:39:33,724 - INFO - Imagen guardada: a9dbeafa51d3698438dd4235c845d63f.jpeg
+2026-05-06 09:39:33,746 - INFO - Imagen guardada: 8a6f875ca5ffc96952e4ebf3063b1b90.jpeg
+2026-05-06 09:39:33,795 - INFO - Imagen guardada: 4b1cf1f38be313e077e02f4831147eb3.jpeg
+2026-05-06 09:39:33,819 - INFO - Imagen guardada: 6d1da176d60fe230812a9314241446d8.jpeg
+2026-05-06 09:39:33,848 - INFO - Imagen guardada: 70ed76416acd8f72b963c93b0c5b32cc.jpeg
+2026-05-06 09:39:33,870 - INFO - Imagen guardada: 3452a898bf771a05f80572a53b38770b.jpeg
+2026-05-06 09:39:33,892 - INFO - Imagen guardada: b3d480e6f177536b2f55c96ad96bacdb.jpeg
+2026-05-06 09:39:33,917 - INFO - Imagen guardada: 7e0ec67dd792d408e733500d20eab2fe.jpeg
+2026-05-06 09:39:33,938 - INFO - Imagen guardada: 03aa13c38807aa20660ad97fae5b63d6.jpeg
+2026-05-06 09:39:33,960 - INFO - Imagen guardada: 4f00bd581a086ea25ce300fe2b50ab8c.jpeg
+2026-05-06 09:39:33,986 - INFO - Imagen guardada: 2318157b8e0d82d6adceb66ab5137859.jpeg
+2026-05-06 09:39:34,009 - INFO - Imagen guardada: d4a08f7266225b4d6394c9c7ff692ad7.jpeg
+2026-05-06 09:39:34,031 - INFO - Imagen guardada: 0f02ae0fc09d1b67258ce6462cbfebab.jpeg
+2026-05-06 09:39:34,054 - INFO - Imagen guardada: 83981af0d203b7ba06ad88ebcd123585.jpeg
+2026-05-06 09:39:34,078 - INFO - Imagen guardada: c860503430427b5c236e21c8c6656e79.jpeg
+2026-05-06 09:39:34,101 - INFO - Imagen guardada: 41dfea306f405c34bc84d6d96a523d15.jpeg
+2026-05-06 09:39:34,126 - INFO - Imagen guardada: 8dd83b8a20ac6e80a8d54645cabff004.jpeg
+2026-05-06 09:39:34,167 - INFO - Imagen guardada: a053d024b321973084c3a6adcdf41c85.png
+2026-05-06 09:39:34,207 - INFO - Imagen guardada: 126bda85e72e8a86bdb7a4c6b351bd65.jpeg
+2026-05-06 09:39:34,255 - INFO - Imagen guardada: 5df9037c35d37a8264e2b48c9fed4311.jpeg
+2026-05-06 09:39:34,278 - INFO - Imagen guardada: 7e9508784098e7f226d81c75b89c044c.jpeg
+2026-05-06 09:39:34,301 - INFO - Imagen guardada: 45988c8749dabae80114b176c6a2ce5f.jpeg
+2026-05-06 09:39:35,308 - INFO - Metadatos guardados en: scraper_results/rtve_noticias/metadata/images_metadata.csv
+2026-05-06 09:39:35,314 - INFO - Metadatos JSON guardados en: scraper_results/rtve_noticias/metadata/images_metadata.json
+2026-05-06 09:39:35,318 - INFO - Reporte resumen: {'scraping_timestamp': '2026-05-06T09:39:35.317746', 'total_images': 92, 'total_failed': 0, 'total_duplicates_detected': 80, 'duplicates_by_reason': {'canonical_duplicate': 8, 'exact_url_duplicate': 72}, 'total_unique_domains': 1, 'average_image_size_kb': 31.67701256793478, 'image_formats': ['image/png', 'image/jpeg'], 'domains': ['www.rtve.es'], 'date_range': {'earliest': 'desconocida', 'latest': 'desconocida'}}
+2026-05-06 09:39:35,318 - INFO - Archivos guardados en: scraper_results/rtve_noticias
+
+============================================================
+SCRAPING COMPLETADO
+============================================================
+Imágenes descargadas: 92
+Fallos: 0
+Páginas procesadas: 1
+Resultados en: scraper_results/rtve_noticias
+============================================================
+2026-05-06 09:39:35,579 - INFO - Iniciando scraping de https://www.bbc.co.uk/news
+2026-05-06 09:39:35,579 - INFO - Procesando página 1/1: https://www.bbc.co.uk/news
+2026-05-06 09:39:35,900 - INFO - Encontradas 159 imágenes en https://www.bbc.co.uk/news
+2026-05-06 09:39:36,169 - INFO - Imagen guardada: 08bbd803e1afba2d5955e5fe92469bd4.jpeg
+2026-05-06 09:39:36,228 - INFO - Imagen guardada: 5f46a6243f3a7b2e897ff77ab676114c.jpeg
+2026-05-06 09:39:36,258 - INFO - Imagen guardada: 0695d7e8320c7688888a7bb8dcd43e72.jpeg
+2026-05-06 09:39:36,290 - INFO - Imagen guardada: 1cec009e0d18b7e55ca506f02555f5d4.jpeg
+2026-05-06 09:39:36,337 - INFO - Imagen guardada: 5f860b0390ec19c2a4e024317e0b93f8.jpeg
+2026-05-06 09:39:36,463 - INFO - Imagen guardada: 9826d58410bc8d3d9c8afe2595790296.jpeg
+2026-05-06 09:39:36,485 - INFO - Imagen guardada: 3a816090d5406ef2b7920b02d963d4f7.jpeg
+2026-05-06 09:39:36,628 - INFO - Imagen guardada: 52a0363a45b6f57d0b30e71a58a11997.jpeg
+2026-05-06 09:39:36,709 - INFO - Imagen guardada: 2bde7025b20464c211f6e80222b09f6b.jpeg
+2026-05-06 09:39:36,810 - INFO - Imagen guardada: a87b4f33bb3a68d3ea49eb00ee49f47b.jpeg
+2026-05-06 09:39:36,931 - INFO - Imagen guardada: 69edb12a94ca8fa267843deb39e6560a.jpeg
+2026-05-06 09:39:37,428 - INFO - Imagen guardada: a8ed2091278f5be77cc6c6bf8e4a986a.jpeg
+2026-05-06 09:39:37,564 - INFO - Imagen guardada: 0807a01194723ce6c6523d638ed5c70a.jpeg
+2026-05-06 09:39:37,596 - INFO - Imagen guardada: 183754beb21ea625fce7910a3d43ee74.jpeg
+2026-05-06 09:39:37,629 - INFO - Imagen guardada: e79fc15bbc6405092b7ee0a2b313f84f.jpeg
+2026-05-06 09:39:37,659 - INFO - Imagen guardada: 2cae0667be60ef41f703063e4e086e38.jpeg
+2026-05-06 09:39:37,686 - INFO - Imagen guardada: cc87086f6012ae7933bd44eea4d2032f.jpeg
+2026-05-06 09:39:37,715 - INFO - Imagen guardada: d79b7d875b392ff6885c872d2954e7e7.jpeg
+2026-05-06 09:39:37,740 - INFO - Imagen guardada: 0f3183a6d3ae7b29d92b802387ecc356.jpeg
+2026-05-06 09:39:37,770 - INFO - Imagen guardada: f6514466338c3c17fcacad929cc0e294.jpeg
+2026-05-06 09:39:37,798 - INFO - Imagen guardada: 0aed69adbdb8b7a4fc5a1dc9233da981.jpeg
+2026-05-06 09:39:37,826 - INFO - Imagen guardada: 54a3544cf22112298776062a9385fe11.jpeg
+2026-05-06 09:39:37,851 - INFO - Imagen guardada: 0558d11b7e8e7972213b031bc32b243f.jpeg
+2026-05-06 09:39:37,882 - INFO - Imagen guardada: 86ccb37f4c57d75ed5754c8208ac6813.jpeg
+2026-05-06 09:39:37,930 - INFO - Imagen guardada: e7135df9a0e1ff30f8a7134dd876500c.jpeg
+2026-05-06 09:39:37,959 - INFO - Imagen guardada: a8f209d2ab518978a355bbc7809c6b4d.jpeg
+2026-05-06 09:39:38,035 - INFO - Imagen guardada: 473772b7b5b9eccd8e69eb1a59ceba32.jpeg
+2026-05-06 09:39:38,069 - INFO - Imagen guardada: 057400c6406f29f8a708eab3ff97083e.jpeg
+2026-05-06 09:39:38,102 - INFO - Imagen guardada: 65379a8a29f28fc18cb21b823a4224bb.jpeg
+2026-05-06 09:39:38,129 - INFO - Imagen guardada: 586e0cbc6f72b18a320fdfb268ac18bf.jpeg
+2026-05-06 09:39:38,155 - INFO - Imagen guardada: 8482c00bbcea1376c2b95a3cae3e0a51.jpeg
+2026-05-06 09:39:38,193 - INFO - Imagen guardada: 2ea029debf5b62f07206f05ef03c3d81.jpeg
+2026-05-06 09:39:38,240 - INFO - Imagen guardada: 74edeb169414d00a9bd7704ba92257e7.jpeg
+2026-05-06 09:39:38,271 - INFO - Imagen guardada: 101b17464d65f4e3c52eeba6a95ce0f2.jpeg
+2026-05-06 09:39:38,383 - INFO - Imagen guardada: 4a5b455bc3198b240594e43de0070200.png
+2026-05-06 09:39:38,491 - INFO - Imagen guardada: 8103b6c1d1c0467cd4d1d9a1c83d1ad9.jpeg
+2026-05-06 09:39:38,541 - INFO - Imagen guardada: 1a121fc889a165a5412e0fee7af0f5c2.png
+2026-05-06 09:39:38,567 - INFO - Imagen guardada: bf463bfa5dd956a0f46ca6f7167d59e5.jpeg
+2026-05-06 09:39:38,649 - INFO - Imagen guardada: 63193fcee84c70a23050223c0c71bb08.jpeg
+2026-05-06 09:39:38,685 - INFO - Imagen guardada: 204f8d6a6c9108cf0803c4d4b3c9c99d.png
+2026-05-06 09:39:38,733 - INFO - Imagen guardada: 7050c43998defbc95e98ff9a59019200.jpeg
+2026-05-06 09:39:38,821 - INFO - Imagen guardada: 584cfeb486307a819904b7737a4a49cd.jpeg
+2026-05-06 09:39:38,880 - INFO - Imagen guardada: 72489cfb165e0f44b8d571e9335310b4.jpeg
+2026-05-06 09:39:38,908 - INFO - Imagen guardada: 185f40b6085ae82a9ad9f79b66d3db3d.jpeg
+2026-05-06 09:39:39,196 - INFO - Imagen guardada: d28baf4365a0fb1dc70f2bb3298f3eac.webp
+2026-05-06 09:39:39,261 - INFO - Imagen guardada: cdc373c2915ec17b295936009836dab9.webp
+2026-05-06 09:39:39,344 - INFO - Imagen guardada: 15cf68b2df7887e2a5264b351755d04e.jpeg
+2026-05-06 09:39:39,381 - INFO - Imagen guardada: 48ed527b4c7b2c78f8917ecf3c21f40d.jpeg
+2026-05-06 09:39:39,416 - INFO - Imagen guardada: e8b99dbe33a559d84ab696d6e91569c7.jpeg
+2026-05-06 09:39:39,508 - INFO - Imagen guardada: 1fcda224f57fed4bbc10710b75189219.jpeg
+2026-05-06 09:39:39,556 - INFO - Imagen guardada: 2eda25a2d09ba6e7e1a949a6df819ad1.jpeg
+2026-05-06 09:39:39,583 - INFO - Imagen guardada: 719925be7ce99acdea19c02f119cc6f1.jpeg
+2026-05-06 09:39:39,612 - INFO - Imagen guardada: ec7784be972d9fef3740b9f728384f7f.jpeg
+2026-05-06 09:39:39,693 - INFO - Imagen guardada: f793b14f7f0864eea74ff86f83afd32d.jpeg
+2026-05-06 09:39:39,743 - INFO - Imagen guardada: db5078c6b305da7c4729dc9e076336bf.jpeg
+2026-05-06 09:39:39,786 - INFO - Imagen guardada: 14ba1bde5fd055dbb3772620ac30604f.jpeg
+2026-05-06 09:39:39,816 - INFO - Imagen guardada: 9e96a16cfbb4ab7e334514fc1867d656.jpeg
+2026-05-06 09:39:39,841 - INFO - Imagen guardada: 8a9f7833d863ccc5626b200c592654b0.jpeg
+2026-05-06 09:39:39,868 - INFO - Imagen guardada: 6c9fdc9287c1d9ba73fabe312c84d045.jpeg
+2026-05-06 09:39:39,912 - INFO - Imagen guardada: 92e97994865cfb89d7d3dda7ed608b3a.jpeg
+2026-05-06 09:39:39,940 - INFO - Imagen guardada: 95824658c17c5b87c252bccf7835af80.jpeg
+2026-05-06 09:39:40,016 - INFO - Imagen guardada: b60b19949ae725ebddecf0a3cc3c9402.jpeg
+2026-05-06 09:39:40,047 - INFO - Imagen guardada: 661e7ac5055f234cebde102f7f5ac715.jpeg
+2026-05-06 09:39:40,122 - INFO - Imagen guardada: 75c55a9a037edb488509620a3e86c49d.jpeg
+2026-05-06 09:39:40,149 - INFO - Imagen guardada: ddff29cb5d6eed787bef43df254d4050.jpeg
+2026-05-06 09:39:40,174 - INFO - Imagen guardada: adcafffe966bd9532a23a231dcb03168.jpeg
+2026-05-06 09:39:40,240 - INFO - Imagen guardada: f6526df2ff72f8c81d3c0bae421d6c2b.png
+2026-05-06 09:39:40,319 - INFO - Imagen guardada: 5d62c233498204ebf163ab7c9e88a0a1.png
+2026-05-06 09:39:40,513 - INFO - Imagen guardada: a3378afbeebd2b27b86ab4fd3e4c51ec.png
+2026-05-06 09:39:42,506 - INFO - Imagen guardada: 2565f138be065457e97d6679c77db260.webp
+2026-05-06 09:39:42,829 - INFO - Imagen guardada: 8a738a70525be946bb2f5959c3e46fbc.webp
+2026-05-06 09:39:42,860 - INFO - Imagen guardada: 4d2d4e8abfdbc790c311f13efd4fed0d.webp
+2026-05-06 09:39:42,912 - INFO - Imagen guardada: faa7736f40ad14b91bd4f4a3a4e606e4.webp
+2026-05-06 09:39:44,718 - INFO - Metadatos guardados en: scraper_results/bbc_news/metadata/images_metadata.csv
+2026-05-06 09:39:44,723 - INFO - Metadatos JSON guardados en: scraper_results/bbc_news/metadata/images_metadata.json
+2026-05-06 09:39:44,729 - INFO - Reporte resumen: {'scraping_timestamp': '2026-05-06T09:39:44.728276', 'total_images': 73, 'total_failed': 0, 'total_duplicates_detected': 393, 'duplicates_by_reason': {'exact_url_duplicate': 314, 'perceptual_duplicate': 79}, 'total_unique_domains': 1, 'average_image_size_kb': 59.931707512842465, 'image_formats': ['image/jpeg', 'image/png', 'image/webp'], 'domains': ['www.bbc.co.uk'], 'date_range': {'earliest': '2023-11-22', 'latest': '2026-05-06'}}
+2026-05-06 09:39:44,729 - INFO - Archivos guardados en: scraper_results/bbc_news
+
+============================================================
+SCRAPING COMPLETADO
+============================================================
+Imágenes descargadas: 73
+Fallos: 0
+Páginas procesadas: 1
+Resultados en: scraper_results/bbc_news
+============================================================
+2026-05-06 09:39:45,024 - INFO - Iniciando scraping de https://elpais.com
+2026-05-06 09:39:45,024 - INFO - Procesando página 1/1: https://elpais.com
+2026-05-06 09:39:45,338 - INFO - Encontradas 114 imágenes en https://elpais.com
+2026-05-06 09:39:45,562 - INFO - Imagen guardada: c01111bcebcc5f04f24596e86a4284d7.jpeg
+2026-05-06 09:39:45,591 - INFO - Imagen guardada: 947e8919fa130a79c0fe187f499dddd3.jpeg
+2026-05-06 09:39:45,630 - INFO - Imagen guardada: 4fabd1dce9b5849f471392cbde8d24f3.jpeg
+2026-05-06 09:39:45,658 - INFO - Imagen guardada: 8c49688e64ee53b2ecd06c0ccad56360.jpeg
+2026-05-06 09:39:45,684 - INFO - Imagen guardada: 7fbf1bb287af459f7d88b50561cd9be5.jpeg
+2026-05-06 09:39:45,714 - INFO - Imagen guardada: f71d0f97abde4f2915668f37dd0e31d3.jpeg
+2026-05-06 09:39:45,741 - INFO - Imagen guardada: d1d06e36976e82831d7033c3bcb98a57.jpeg
+2026-05-06 09:39:45,769 - INFO - Imagen guardada: d42cea0e5af6e80bda223fa2aae309bd.jpeg
+2026-05-06 09:39:45,798 - INFO - Imagen guardada: 07285253910b2f8145b0b9715257148a.jpeg
+2026-05-06 09:39:45,831 - INFO - Imagen guardada: cdecf0cad2f9f11e0454923dc6f434ac.jpeg
+2026-05-06 09:39:45,862 - INFO - Imagen guardada: 07f717fa31aa809fd2605039b6f4933d.jpeg
+2026-05-06 09:39:45,892 - INFO - Imagen guardada: 0e3e5d3dad295d5422e058eacb0ad812.jpeg
+2026-05-06 09:39:45,924 - INFO - Imagen guardada: 296f62d65a15d083754c104de9eb4b50.jpeg
+2026-05-06 09:39:45,954 - INFO - Imagen guardada: 428425f125d10864b6ba2ac4d4ee877e.jpeg
+2026-05-06 09:39:45,995 - INFO - Imagen guardada: 9720f820f9da7bc5734d452d0bfe6820.jpeg
+2026-05-06 09:39:46,030 - INFO - Imagen guardada: cfdea6f8d7ca737dd1636a1c05fb821f.jpeg
+2026-05-06 09:39:46,063 - INFO - Imagen guardada: 5f85d67b041d1beaef41490bc7525f3c.jpeg
+2026-05-06 09:39:46,128 - INFO - Imagen guardada: 188be3f452c52fa1cec5f6217d599c4a.jpeg
+2026-05-06 09:39:46,158 - INFO - Imagen guardada: 77f355f5839650633b7cbd6669c4bf1e.jpeg
+2026-05-06 09:39:46,202 - INFO - Imagen guardada: d40f2d5c673fd4466239ceddaefc2970.jpeg
+2026-05-06 09:39:46,269 - INFO - Imagen guardada: 89f07bcbf6ab3f4b0b26f24a720e8cf2.jpeg
+2026-05-06 09:39:46,303 - INFO - Imagen guardada: 488b7818c2b28ba82cbdc0ca01e159fb.jpeg
+2026-05-06 09:39:46,338 - INFO - Imagen guardada: eb7166cb9fb95a61d30003a33ede5f54.jpeg
+2026-05-06 09:39:46,373 - INFO - Imagen guardada: 2ada1caff2dd6c57bbc48836fb19e03d.jpeg
+2026-05-06 09:39:46,436 - INFO - Imagen guardada: 71f977f27a385508733896e1d9245671.jpeg
+2026-05-06 09:39:46,483 - INFO - Imagen guardada: 8b796545fcfb25b541cc93f88a567e36.jpeg
+2026-05-06 09:39:46,538 - INFO - Imagen guardada: 95b4044cab86e29644d1e71d8c8ec58e.jpeg
+2026-05-06 09:39:46,567 - INFO - Imagen guardada: a8db78d5f0a9bca0519bda03a7a62c9d.jpeg
+2026-05-06 09:39:46,644 - INFO - Imagen guardada: 32bcd1af27f8bda52d7bd0ad26d13837.jpeg
+2026-05-06 09:39:46,740 - INFO - Imagen guardada: 986764bdb74fe2315924ac9cb1398980.jpeg
+2026-05-06 09:39:46,774 - INFO - Imagen guardada: bddcbb6a6c49dc00df970edee66c5cc8.jpeg
+2026-05-06 09:39:46,808 - INFO - Imagen guardada: 76cd8f81a3e726eef3d968a368a705ec.jpeg
+2026-05-06 09:39:46,868 - INFO - Imagen guardada: 5af2287c358f1910df1c289aa4ccb00e.jpeg
+2026-05-06 09:39:46,932 - INFO - Imagen guardada: 70b0b247865f3cc6fcbf8fcb76637e04.jpeg
+2026-05-06 09:39:46,989 - INFO - Imagen guardada: f54f21697d42426035dcd228684e1e06.jpeg
+2026-05-06 09:39:47,024 - INFO - Imagen guardada: 5ba270d8f4162bdb4c45bf732bcffd91.jpeg
+2026-05-06 09:39:47,079 - INFO - Imagen guardada: 0f2cb9830e442dbce2086004e6fb8614.jpeg
+2026-05-06 09:39:47,107 - INFO - Imagen guardada: 63e59d969c12c87dbba47528f836d34f.jpeg
+2026-05-06 09:39:47,153 - INFO - Imagen guardada: 9a2b497ff89076f3c8c2cea67f3795ba.jpeg
+2026-05-06 09:39:47,179 - INFO - Imagen guardada: 54aa485471a24c795336b480e0cab5a6.jpeg
+2026-05-06 09:39:47,206 - INFO - Imagen guardada: 9f0e32a2d56bd6dea0c4775eafa7ecb4.jpeg
+2026-05-06 09:39:47,234 - INFO - Imagen guardada: e5e14529fb4f9dfc1428d27c0b5faaae.jpeg
+2026-05-06 09:39:47,260 - INFO - Imagen guardada: d7e38cb4d0ee4898c8e65eb13e8544f0.jpeg
+2026-05-06 09:39:47,289 - INFO - Imagen guardada: 3dcae06722e2ce76ae0322f9c2ebd424.jpeg
+2026-05-06 09:39:47,320 - INFO - Imagen guardada: 373820fd0d32d6bfce972ba4822211aa.jpeg
+2026-05-06 09:39:47,373 - INFO - Imagen guardada: 8aad73cd21e398c808bd88a9123ab076.jpeg
+2026-05-06 09:39:47,405 - INFO - Imagen guardada: 6e2002a5eee7e141c50a347f2dea69a4.jpeg
+2026-05-06 09:39:47,438 - INFO - Imagen guardada: f62b39e8a2b70f0b87e968a0a9fd1799.png
+2026-05-06 09:39:47,469 - INFO - Imagen guardada: 0385807ee21cb7e4f5778f7659d0a5be.png
+2026-05-06 09:39:47,519 - INFO - Imagen guardada: c63a97f97e482aa9774a652598a330cd.png
+2026-05-06 09:39:47,551 - INFO - Imagen guardada: 8bc98a8a17b2c62c53224acb3ef53c6f.png
+2026-05-06 09:39:47,583 - INFO - Imagen guardada: 59a477a02f14054358785d081d12d3fc.png
+2026-05-06 09:39:47,683 - INFO - Imagen guardada: 8126f9d70b40530c7b7e14d65f0db7f9.jpeg
+2026-05-06 09:39:47,714 - INFO - Imagen guardada: 2325ee0f5ab27134a71f1f35e6efa4bc.jpeg
+2026-05-06 09:39:47,757 - INFO - Imagen guardada: 5ecc1a75828b6bade3718d93ca401f01.jpeg
+2026-05-06 09:39:47,789 - INFO - Imagen guardada: 75e477b7ad403d7cf9a17e74c5145c6d.jpeg
+2026-05-06 09:39:47,818 - INFO - Imagen guardada: a33eda72b80efa849b147227f6f5ecd3.jpeg
+2026-05-06 09:39:47,849 - INFO - Imagen guardada: e5f5b1af62dc2ece4b6cd86b32bac25c.jpeg
+2026-05-06 09:39:47,879 - INFO - Imagen guardada: f2ac4b3e711b2b4500a55fb463ae44d0.jpeg
+2026-05-06 09:39:47,909 - INFO - Imagen guardada: 7ba50b15326a8511ebc51446ea3e9f30.jpeg
+2026-05-06 09:39:47,941 - INFO - Imagen guardada: fb1d86562adb1a34470777bd044e35c4.jpeg
+2026-05-06 09:39:47,973 - INFO - Imagen guardada: 5e6caaa7d1fa89ddee02a113f14eafe6.jpeg
+2026-05-06 09:39:48,018 - INFO - Imagen guardada: c42e20119149803261c75536bf78b8d4.jpeg
+2026-05-06 09:39:48,051 - INFO - Imagen guardada: c1ea55e1fc5c51b3cab521bcdf7c976b.jpeg
+2026-05-06 09:39:48,083 - INFO - Imagen guardada: 19806aaee4c7b1e054e6aff8ca535745.jpeg
+2026-05-06 09:39:48,118 - INFO - Imagen guardada: b0ab1c9895bc2502471c9d1fca3d0754.jpeg
+2026-05-06 09:39:48,150 - INFO - Imagen guardada: de6004e1e669abb113ecd63ea649e03f.jpeg
+2026-05-06 09:39:48,191 - INFO - Imagen guardada: e074125d7bfde6273573f083458a028c.jpeg
+2026-05-06 09:39:48,234 - INFO - Imagen guardada: f4ca3d45b5eacf61fd356e725840ed45.jpeg
+2026-05-06 09:39:48,266 - INFO - Imagen guardada: 6718a7557474d770dc311a7af39cd075.jpeg
+2026-05-06 09:39:48,297 - INFO - Imagen guardada: feff1496252a81b431fcaf234722aa0c.jpeg
+2026-05-06 09:39:48,332 - INFO - Imagen guardada: 9a39e1752a54f9d2c3a4d5e2d493c185.jpeg
+2026-05-06 09:39:48,366 - INFO - Imagen guardada: 7fee013a44f01242a991202645f736dc.jpeg
+2026-05-06 09:39:48,408 - INFO - Imagen guardada: 242f2d542289303ce46e619bb1fe43d2.jpeg
+2026-05-06 09:39:48,440 - INFO - Imagen guardada: a303410431214909cd9d98e91bcea057.jpeg
+2026-05-06 09:39:48,471 - INFO - Imagen guardada: 5aaa3754345233e91102e2b84979c3d3.jpeg
+2026-05-06 09:39:48,501 - INFO - Imagen guardada: 714105f5190293ef65a47158ce8ded5d.jpeg
+2026-05-06 09:39:48,536 - INFO - Imagen guardada: 0ac0816bb62a60f853da0f5070247c8d.jpeg
+2026-05-06 09:39:48,567 - INFO - Imagen guardada: 3777b992e934bc68217235d878d6417c.jpeg
+2026-05-06 09:39:48,599 - INFO - Imagen guardada: f9b9f4fd6dca0b2889b24635d9680bc8.jpeg
+2026-05-06 09:39:48,629 - INFO - Imagen guardada: b2dba6b811109b467c28dfbb5260c3ad.jpeg
+2026-05-06 09:39:48,662 - INFO - Imagen guardada: 35977a045381a032fd496d626b94380e.jpeg
+2026-05-06 09:39:48,693 - INFO - Imagen guardada: 5dbccdc70d4313831d664faeb13c0e83.jpeg
+2026-05-06 09:39:48,725 - INFO - Imagen guardada: 100b506488b21a336023015c8c3fec6c.jpeg
+2026-05-06 09:39:48,757 - INFO - Imagen guardada: d92766f60be4e8def9edbb407b80cdd8.jpeg
+2026-05-06 09:39:48,789 - INFO - Imagen guardada: 5cc70d702a3acdc9d977b78e5636cb43.jpeg
+2026-05-06 09:39:48,883 - INFO - Imagen guardada: d2391df986b54fb2fcd35a713f75ecc4.jpeg
+2026-05-06 09:39:48,916 - INFO - Imagen guardada: c7396df020ed337a68f3b168c927c590.jpeg
+2026-05-06 09:39:48,974 - INFO - Imagen guardada: 0133a9f665b98d1f7a45e3560a3fa3e0.jpeg
+2026-05-06 09:39:49,005 - INFO - Imagen guardada: 9fea05a1fe8bfd1a046e18849a66a600.jpeg
+2026-05-06 09:39:49,095 - INFO - Imagen guardada: 589b362dd1991f7c913a667ba3cbd574.jpeg
+2026-05-06 09:39:49,127 - INFO - Imagen guardada: d6f2f1e61a937e33e1b9be285ab6e505.jpeg
+2026-05-06 09:39:49,159 - INFO - Imagen guardada: fc4ef9538b1497dc675ccd522e03ac39.jpeg
+2026-05-06 09:39:49,216 - INFO - Imagen guardada: 9547a799fe19a288c0dd76375032803d.jpeg
+2026-05-06 09:39:49,301 - INFO - Imagen guardada: ddae9d0ec682b793c9965816c529e2a5.jpeg
+2026-05-06 09:39:49,333 - INFO - Imagen guardada: abc956895f10d3e145e12b7729e2ea21.jpeg
+2026-05-06 09:39:49,371 - INFO - Imagen guardada: 4aabe976e84915fdd6fd8ded315f1e46.jpeg
+2026-05-06 09:39:49,403 - INFO - Imagen guardada: 0914929de654d0af82b87a218d826da5.jpeg
+2026-05-06 09:39:49,438 - INFO - Imagen guardada: 706ba2950ddef9a5c2c1d6456ac4de17.jpeg
+2026-05-06 09:39:49,482 - INFO - Imagen guardada: 71161fc8e4f1db2dc1da1c177c9c8bbb.jpeg
+2026-05-06 09:39:49,545 - INFO - Imagen guardada: d0ea71b99a6e0263de477b276f0f19af.jpeg
+2026-05-06 09:39:49,574 - INFO - Imagen guardada: d709ad5703ee3c64b22f2e6f4efaf568.jpeg
+2026-05-06 09:39:49,607 - INFO - Imagen guardada: e41142be82c109d30fc7d23205be03a3.jpeg
+2026-05-06 09:39:49,657 - INFO - Imagen guardada: 4dc7660eb5795511429c221773779855.jpeg
+2026-05-06 09:39:49,714 - INFO - Imagen guardada: c7cee48d84d8533c2dcf39235bed9208.jpeg
+2026-05-06 09:39:49,773 - INFO - Imagen guardada: cabf72db4f483b79cd659196cc4fa877.jpeg
+2026-05-06 09:39:49,807 - INFO - Imagen guardada: 2da583accd83c8e09dcb1031e5de906b.jpeg
+2026-05-06 09:39:49,840 - INFO - Imagen guardada: 7d4c1b877115a87025471489420dfcb3.jpeg
+2026-05-06 09:39:49,872 - INFO - Imagen guardada: b3560ae856eac430a66bb2d35b2c95dd.jpeg
+2026-05-06 09:39:49,902 - INFO - Imagen guardada: b9952c78c13295b1b52b5a8fed9f030f.jpeg
+2026-05-06 09:39:49,933 - INFO - Imagen guardada: c632abf7642c6c0cb65309685f8db42f.jpeg
+2026-05-06 09:39:49,964 - INFO - Imagen guardada: bd7d16f9678c1f557b642a49fdeb16dd.jpeg
+2026-05-06 09:39:49,993 - INFO - Imagen guardada: 617db733d2cc81bcfc3f501331f0efdf.jpeg
+2026-05-06 09:39:51,008 - INFO - Metadatos guardados en: scraper_results/el_pais/metadata/images_metadata.csv
+2026-05-06 09:39:51,014 - INFO - Metadatos JSON guardados en: scraper_results/el_pais/metadata/images_metadata.json
+2026-05-06 09:39:51,022 - INFO - Reporte resumen: {'scraping_timestamp': '2026-05-06T09:39:51.020992', 'total_images': 113, 'total_failed': 0, 'total_duplicates_detected': 2, 'duplicates_by_reason': {'exact_url_duplicate': 1, 'perceptual_duplicate': 1}, 'total_unique_domains': 1, 'average_image_size_kb': 23.562508642146017, 'image_formats': ['image/jpeg', 'image/png'], 'domains': ['elpais.com'], 'date_range': {'earliest': '2026-01-14', 'latest': '2026-05-06'}}
+2026-05-06 09:39:51,022 - INFO - Archivos guardados en: scraper_results/el_pais
+
+============================================================
+SCRAPING COMPLETADO
+============================================================
+Imágenes descargadas: 113
+Fallos: 0
+Páginas procesadas: 1
+Resultados en: scraper_results/el_pais
+============================================================
+2026-05-06 09:39:51,272 - INFO - Iniciando scraping de https://www.nytimes.com
+2026-05-06 09:39:51,272 - INFO - Procesando página 1/1: https://www.nytimes.com
+2026-05-06 09:39:51,860 - INFO - Encontradas 28 imágenes en https://www.nytimes.com
+2026-05-06 09:39:52,160 - INFO - Imagen guardada: a4dcb74070bef34464267af9abdfb05c.jpeg
+2026-05-06 09:39:52,216 - INFO - Imagen guardada: e71d19bfe87802c554e7282b89a55d8f.jpeg
+2026-05-06 09:39:52,249 - INFO - Imagen guardada: 7e45f0166dccc8804d6418bfa875b10c.jpeg
+2026-05-06 09:39:52,284 - INFO - Imagen guardada: 64cba9c58595c8c260c4a782c7dd7269.jpeg
+2026-05-06 09:39:52,317 - INFO - Imagen guardada: a77e0a0f9a3dd73037337a1e02d8fde6.jpeg
+2026-05-06 09:39:52,355 - INFO - Imagen guardada: 9e45b533c4691ea7f0a6503e5d6ba131.jpeg
+2026-05-06 09:39:52,401 - INFO - Imagen guardada: 2eea9056b41392816e7975e3664ff472.jpeg
+2026-05-06 09:39:52,443 - INFO - Imagen guardada: 4398e25ae09b69a457469c404ffff12e.jpeg
+2026-05-06 09:39:52,473 - INFO - Imagen guardada: 7965a3b0866420d9473945fa1f0a39e4.jpeg
+2026-05-06 09:39:52,541 - INFO - Imagen guardada: 49423e2b4591ff4e1d5dbf78ea01295e.jpeg
+2026-05-06 09:39:52,571 - INFO - Imagen guardada: 5ddb81c7e277d479be04e73143cfbae1.jpeg
+2026-05-06 09:39:52,608 - INFO - Imagen guardada: 003c3a297baa2f19c6c4d741c2db7895.jpeg
+2026-05-06 09:39:52,632 - INFO - Imagen guardada: 1c991cecd633f0bde5b8711d1720317b.jpeg
+2026-05-06 09:39:52,666 - INFO - Imagen guardada: 4bf99735e3db05f22ae8c2b3ddf1fda7.jpeg
+2026-05-06 09:39:52,689 - INFO - Imagen guardada: 21f08786a3624cb91c5083a9a98fc30e.png
+2026-05-06 09:39:52,777 - INFO - Imagen guardada: fb5612d843a1f843893f058248508412.jpeg
+2026-05-06 09:39:52,798 - INFO - Imagen guardada: 87a3117fe794392928bd9373b9ea1b09.jpeg
+2026-05-06 09:39:52,817 - INFO - Imagen guardada: 49438e2867048ed014e24f98420ef4c4.jpeg
+2026-05-06 09:39:52,855 - INFO - Imagen guardada: 7ce7f47b7544f06db266e3aed9f2d906.jpeg
+2026-05-06 09:39:52,891 - INFO - Imagen guardada: eb53751eb9f9e2f526f4a2d547164a2e.jpeg
+2026-05-06 09:39:53,023 - INFO - Imagen guardada: 5576b3e59394385efc40bebdac524940.png
+2026-05-06 09:39:53,055 - INFO - Imagen guardada: 8c89245afd9cf9a3191200994543bc8c.jpeg
+2026-05-06 09:39:53,126 - INFO - Imagen guardada: 3d8e4420946d57cbdf4bc5c3f4af9de7.jpeg
+2026-05-06 09:39:53,184 - INFO - Imagen guardada: 40fe43519205dc3ad5f5f423e95861d9.png
+2026-05-06 09:39:54,673 - INFO - Metadatos guardados en: scraper_results/new_york_times/metadata/images_metadata.csv
+2026-05-06 09:39:54,676 - INFO - Metadatos JSON guardados en: scraper_results/new_york_times/metadata/images_metadata.json
+2026-05-06 09:39:54,681 - INFO - Reporte resumen: {'scraping_timestamp': '2026-05-06T09:39:54.680351', 'total_images': 24, 'total_failed': 0, 'total_duplicates_detected': 24, 'duplicates_by_reason': {'exact_url_duplicate': 23, 'perceptual_duplicate': 1}, 'total_unique_domains': 1, 'average_image_size_kb': 131.20511881510416, 'image_formats': ['image/png', 'image/jpeg'], 'domains': ['www.nytimes.com'], 'date_range': {'earliest': 'desconocida', 'latest': 'desconocida'}}
+2026-05-06 09:39:54,681 - INFO - Archivos guardados en: scraper_results/new_york_times
+
+============================================================
+SCRAPING COMPLETADO
+============================================================
+Imágenes descargadas: 24
+Fallos: 0
+Páginas procesadas: 1
+Resultados en: scraper_results/new_york_times
+============================================================
+2026-05-06 09:39:54,935 - INFO - Iniciando scraping de https://www.deviantart.com
+2026-05-06 09:39:54,935 - INFO - Procesando página 1/1: https://www.deviantart.com
+2026-05-06 09:39:55,933 - INFO - Encontradas 38 imágenes en https://www.deviantart.com
+2026-05-06 09:39:56,165 - INFO - Imagen guardada: e0be073d5531c7875df1545e303adf5b.jpeg
+2026-05-06 09:39:56,201 - INFO - Imagen guardada: 8fef95386ffca27a57203e35434d95b9.jpeg
+2026-05-06 09:39:56,344 - INFO - Imagen guardada: f867db3457882cf849cc348e978a69a2.jpeg
+2026-05-06 09:39:56,402 - INFO - Imagen guardada: d358ee46221efaf4dd8e7a04ba3b8392.jpeg
+2026-05-06 09:39:56,440 - INFO - Imagen guardada: 9afc7ada60f3a618485248f9a2c53ccb.jpeg
+2026-05-06 09:39:56,463 - INFO - Imagen guardada: d8c80d7b0804cca3f0be693c34c1a02b.jpeg
+2026-05-06 09:39:56,533 - INFO - Imagen guardada: e692ba1d515e90a775366104dc36c9a3.png
+2026-05-06 09:39:56,576 - INFO - Imagen guardada: f062653d081adf149349290aa1f48242.jpeg
+2026-05-06 09:39:56,607 - INFO - Imagen guardada: c924a8ce8e397786f7415b921c9a4851.jpeg
+2026-05-06 09:39:56,653 - INFO - Imagen guardada: de55c7e6b90e95ba2c4637a93b649e01.jpeg
+2026-05-06 09:39:56,731 - INFO - Imagen guardada: ac80aa0c12643437a249cad29fd784d1.png
+2026-05-06 09:39:56,807 - INFO - Imagen guardada: 40a3bce520920c685192ccc235d831f9.jpeg
+2026-05-06 09:39:56,831 - INFO - Imagen guardada: 65e200704e1b9a40b919e2c928c51433.jpeg
+2026-05-06 09:39:56,903 - INFO - Imagen guardada: 1c65c44b699de839fd3c4c7e66ad4659.jpeg
+2026-05-06 09:39:56,934 - INFO - Imagen guardada: 7a4df88f0027c82697766c1aa3c63ed2.jpeg
+2026-05-06 09:39:57,015 - INFO - Imagen guardada: 166078bbab8182738055b7c0901f19a8.jpeg
+2026-05-06 09:39:57,047 - INFO - Imagen guardada: d84c20bcd6c3955ba95f2e99975d1798.jpeg
+2026-05-06 09:39:57,077 - INFO - Imagen guardada: 48b21e60bb56e78bfc0ded297610a854.jpeg
+2026-05-06 09:39:57,119 - INFO - Imagen guardada: 1ad80437c0232588e3eadae02f4d4c96.jpeg
+2026-05-06 09:39:57,159 - INFO - Imagen guardada: 634b3c6c33cd72808d6ab796c9bdb806.png
+2026-05-06 09:39:57,223 - INFO - Imagen guardada: b847ebed553cc98c05b7491a7b55633a.jpeg
+2026-05-06 09:39:57,256 - INFO - Imagen guardada: 3030b2717baca61feb7d4757d577ee72.jpeg
+2026-05-06 09:39:57,281 - INFO - Imagen guardada: c49a9ce10ab6eb9f79852b4d242da066.jpeg
+2026-05-06 09:39:57,316 - INFO - Imagen guardada: edf04f4ffea7589355c9b14ccc5b3336.jpeg
+2026-05-06 09:39:57,340 - INFO - Imagen guardada: b09d2c1f5643a6a2a8500182a8797dff.png
+2026-05-06 09:39:57,371 - INFO - Imagen guardada: 992e6ffada21f4f1f2cba6eb3c32eb6f.jpeg
+2026-05-06 09:39:57,415 - INFO - Imagen guardada: 8ccb0c231124ec6b9e3930ea9e777d57.png
+2026-05-06 09:39:57,453 - INFO - Imagen guardada: a0a83330a7c2944bcfe5b8aa5883b664.jpeg
+2026-05-06 09:39:57,521 - INFO - Imagen guardada: 588dac6f078f05843578bf5cfa75d666.jpeg
+2026-05-06 09:39:57,643 - INFO - Imagen guardada: 0d138004d6df052da7da297f5b2828a2.jpeg
+2026-05-06 09:39:57,679 - INFO - Imagen guardada: b892811daa3aaaff15cf52b7947dce4d.jpeg
+2026-05-06 09:39:57,704 - INFO - Imagen guardada: f10c35dd946255d05c918e2a6d86c79d.jpeg
+2026-05-06 09:39:57,737 - INFO - Imagen guardada: 21c6388f1533861f7147c088355fd828.jpeg
+2026-05-06 09:39:57,760 - INFO - Imagen guardada: ac446fe0b293ac6034a1c7b3cae0bd3a.jpeg
+2026-05-06 09:39:57,794 - INFO - Imagen guardada: ec508a9b9c94904b559b61df5f75e8e3.jpeg
+2026-05-06 09:39:57,827 - INFO - Imagen guardada: d1cc663012f4e6c0abb94344b92f8277.jpeg
+2026-05-06 09:39:57,850 - INFO - Imagen guardada: 133b321aec227326f4e6d4e4f8e1cf44.jpeg
+2026-05-06 09:39:59,683 - INFO - Metadatos guardados en: scraper_results/deviantart/metadata/images_metadata.csv
+2026-05-06 09:39:59,709 - INFO - Metadatos JSON guardados en: scraper_results/deviantart/metadata/images_metadata.json
+2026-05-06 09:39:59,720 - INFO - Reporte resumen: {'scraping_timestamp': '2026-05-06T09:39:59.718547', 'total_images': 37, 'total_failed': 0, 'total_duplicates_detected': 0, 'duplicates_by_reason': {}, 'total_unique_domains': 1, 'average_image_size_kb': 86.05070206925676, 'image_formats': ['image/png', 'image/jpeg'], 'domains': ['www.deviantart.com'], 'date_range': {'earliest': '2020-11-06', 'latest': '2026-04-16'}}
+2026-05-06 09:39:59,720 - INFO - Archivos guardados en: scraper_results/deviantart
+
+============================================================
+SCRAPING COMPLETADO
+============================================================
+Imágenes descargadas: 37
+Fallos: 0
+Páginas procesadas: 1
+Resultados en: scraper_results/deviantart
+============================================================
+2026-05-06 09:40:00,466 - INFO - Iniciando scraping de https://www.artstation.com
+2026-05-06 09:40:00,466 - INFO - Procesando página 1/1: https://www.artstation.com
+2026-05-06 09:40:00,659 - ERROR - Error descargando https://www.artstation.com: 403 Client Error: Forbidden for url: https://www.artstation.com/
+2026-05-06 09:40:00,660 - INFO - Metadatos guardados en: scraper_results/artstation/metadata/images_metadata.csv
+2026-05-06 09:40:00,660 - INFO - Metadatos JSON guardados en: scraper_results/artstation/metadata/images_metadata.json
+2026-05-06 09:40:00,661 - INFO - Reporte resumen: {'scraping_timestamp': '2026-05-06T09:40:00.660722', 'total_images': 0, 'total_failed': 0, 'total_duplicates_detected': 0, 'duplicates_by_reason': {}, 'total_unique_domains': 0, 'average_image_size_kb': 0.0, 'image_formats': [], 'domains': [], 'date_range': {'earliest': 'desconocida', 'latest': 'desconocida'}}
+2026-05-06 09:40:00,661 - INFO - Archivos guardados en: scraper_results/artstation
+
+============================================================
+SCRAPING COMPLETADO
+============================================================
+Imágenes descargadas: 0
+Fallos: 0
+Páginas procesadas: 1
+Resultados en: scraper_results/artstation
+============================================================
+2026-05-06 09:40:00,904 - INFO - Iniciando scraping de https://www.behance.net
+2026-05-06 09:40:00,904 - INFO - Procesando página 1/1: https://www.behance.net
+2026-05-06 09:40:01,060 - ERROR - Error descargando https://www.behance.net: 403 Client Error: Forbidden for url: https://www.behance.net/
+2026-05-06 09:40:01,061 - INFO - Metadatos guardados en: scraper_results/behance/metadata/images_metadata.csv
+2026-05-06 09:40:01,061 - INFO - Metadatos JSON guardados en: scraper_results/behance/metadata/images_metadata.json
+2026-05-06 09:40:01,061 - INFO - Reporte resumen: {'scraping_timestamp': '2026-05-06T09:40:01.061652', 'total_images': 0, 'total_failed': 0, 'total_duplicates_detected': 0, 'duplicates_by_reason': {}, 'total_unique_domains': 0, 'average_image_size_kb': 0.0, 'image_formats': [], 'domains': [], 'date_range': {'earliest': 'desconocida', 'latest': 'desconocida'}}
+2026-05-06 09:40:01,062 - INFO - Archivos guardados en: scraper_results/behance
+
+============================================================
+SCRAPING COMPLETADO
+============================================================
+Imágenes descargadas: 0
+Fallos: 0
+Páginas procesadas: 1
+Resultados en: scraper_results/behance
+============================================================
+2026-05-06 09:40:01,291 - INFO - Iniciando scraping de https://dribbble.com
+2026-05-06 09:40:01,291 - INFO - Procesando página 1/1: https://dribbble.com
+2026-05-06 09:40:02,001 - INFO - Encontradas 44 imágenes en https://dribbble.com
+2026-05-06 09:40:02,061 - WARNING - Error descargando data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=: No connection adapters were found for 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII='
+2026-05-06 09:40:02,313 - INFO - Imagen guardada: 708717f476323b7b2e45eca9a593db86.jpeg
+2026-05-06 09:40:02,337 - INFO - Imagen guardada: a691a404218c4deb69674d6997567b92.jpeg
+2026-05-06 09:40:02,337 - WARNING - Error descargando data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==: No connection adapters were found for 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='
+2026-05-06 09:40:02,539 - INFO - Imagen guardada: 48357140d17258b35d42562e10e93767.png
+2026-05-06 09:40:02,672 - INFO - Imagen guardada: 50c3b88f11f4492f76e9cad2c6e0cdf9.png
+2026-05-06 09:40:02,715 - INFO - Imagen guardada: 830e88bc89d2f285b19539fc4bec2b05.png
+2026-05-06 09:40:02,852 - INFO - Imagen guardada: bd5f9a96f4dd1fa106339071886db04e.png
+2026-05-06 09:40:02,898 - INFO - Imagen guardada: 68b3600c8db5d6581373d1e376908eb2.png
+2026-05-06 09:40:02,923 - INFO - Imagen guardada: dee89f675091c069e624f23dbc41bfaa.jpeg
+2026-05-06 09:40:02,952 - INFO - Imagen guardada: 97a933f95378bc8540c2c07e1f7e74f8.png
+2026-05-06 09:40:02,972 - WARNING - Imagen no cumple criterios de calidad: https://cdn.dribbble.com/users/559871/avatars/small/12051b84dbf17314ec3b67a2b30eda87.png?1763370660
+2026-05-06 09:40:03,001 - INFO - Imagen guardada: 3e7e5cf9b6ef98cf61495b650926396a.png
+2026-05-06 09:40:03,026 - INFO - Imagen guardada: a87be8f4e325e3ae27b4ca7819381c01.jpeg
+2026-05-06 09:40:03,050 - INFO - Imagen guardada: 024c5d2d8f4934f47a405dfad6193477.jpeg
+2026-05-06 09:40:03,096 - INFO - Imagen guardada: 7b196000821527e55ed4736333611a64.png
+2026-05-06 09:40:03,137 - INFO - Imagen guardada: a1bd44d71bbfdb9e9a958318ed4d6955.png
+2026-05-06 09:40:03,301 - INFO - Imagen guardada: e38df40dbf28e2008f9feb8dbac2438a.png
+2026-05-06 09:40:03,337 - INFO - Imagen guardada: 8b468c753259af2779c6f87c9ef5662c.png
+2026-05-06 09:40:03,580 - INFO - Imagen guardada: e20184d95da55eee98c7ce6e4cd53017.webp
+2026-05-06 09:40:03,626 - INFO - Imagen guardada: 818427fc9eef222dd6fe0bffad96ea1d.webp
+2026-05-06 09:40:03,734 - INFO - Imagen guardada: 52de17cecd1404e93ba1bcbf63ff8e24.webp
+2026-05-06 09:40:03,796 - INFO - Imagen guardada: 9f71ecda10d91d81bebbd9b8cc74fefd.webp
+2026-05-06 09:40:03,873 - INFO - Imagen guardada: 692ea7aa65a2617836e31b1834c7d328.webp
+2026-05-06 09:40:03,995 - INFO - Imagen guardada: 424cf010012b01dd5454d3116bf90ccc.webp
+2026-05-06 09:40:04,128 - INFO - Imagen guardada: 94e8bb02ed15664d4f395c113b6db17e.webp
+2026-05-06 09:40:04,155 - INFO - Imagen guardada: e7bfd9f121f4a20d5b6aad81fb99affc.jpeg
+2026-05-06 09:40:04,179 - INFO - Imagen guardada: 1b90a83b7e7444cb6fe62da83cf1cfa6.jpeg
+2026-05-06 09:40:04,206 - INFO - Imagen guardada: b0228cda464585d5357e143f559f7fc3.jpeg
+2026-05-06 09:40:04,232 - INFO - Imagen guardada: b079ff8d42a8e0a78a966cb86562a449.jpeg
+2026-05-06 09:40:04,256 - INFO - Imagen guardada: aa30a11978d113eb41fefc3f95e7b524.jpeg
+2026-05-06 09:40:04,282 - INFO - Imagen guardada: 9e3e73a1638f4e9631a64fb3976a210c.jpeg
+2026-05-06 09:40:04,304 - INFO - Imagen guardada: 13d991fe02b4fe5bd15d2e5b0dcc2152.jpeg
+2026-05-06 09:40:04,358 - INFO - Imagen guardada: 1b1c458fede16e1b991ca422c6ccbacc.jpeg
+2026-05-06 09:40:04,381 - INFO - Imagen guardada: 97a79d95ce86ff028bdddc218e3b91be.jpeg
+2026-05-06 09:40:04,404 - INFO - Imagen guardada: 1cf08e8ef0c2aa07ce484026723661d1.jpeg
+2026-05-06 09:40:04,428 - INFO - Imagen guardada: 27b37a2d86def3942139c76045e0c510.jpeg
+2026-05-06 09:40:04,452 - INFO - Imagen guardada: 3f9b66ba0ba1607301e0b8f5ffdb8381.jpeg
+2026-05-06 09:40:04,476 - INFO - Imagen guardada: d2dba767aa64f1d364ea093179ec7d7b.jpeg
+2026-05-06 09:40:04,500 - INFO - Imagen guardada: 36bf30871acb9caee9efb65199a6bc48.jpeg
+2026-05-06 09:40:05,517 - INFO - Metadatos guardados en: scraper_results/dribbble/metadata/images_metadata.csv
+2026-05-06 09:40:05,524 - INFO - Metadatos JSON guardados en: scraper_results/dribbble/metadata/images_metadata.json
+2026-05-06 09:40:05,529 - INFO - Reporte resumen: {'scraping_timestamp': '2026-05-06T09:40:05.528142', 'total_images': 37, 'total_failed': 2, 'total_duplicates_detected': 87, 'duplicates_by_reason': {'canonical_duplicate': 32, 'exact_url_duplicate': 55}, 'total_unique_domains': 1, 'average_image_size_kb': 86.58902554898648, 'image_formats': ['image/jpeg', 'image/webp', 'image/png'], 'domains': ['dribbble.com'], 'date_range': {'earliest': 'desconocida', 'latest': 'desconocida'}}
+2026-05-06 09:40:05,529 - INFO - Archivos guardados en: scraper_results/dribbble
+
+============================================================
+SCRAPING COMPLETADO
+============================================================
+Imágenes descargadas: 37
+Fallos: 2
+Páginas procesadas: 1
+Resultados en: scraper_results/dribbble
+============================================================
+2026-05-06 09:40:05,880 - INFO - Iniciando scraping de https://www.pixiv.net
+2026-05-06 09:40:05,880 - INFO - Procesando página 1/1: https://www.pixiv.net
+2026-05-06 09:40:06,577 - INFO - Encontradas 0 imágenes en https://www.pixiv.net
+2026-05-06 09:40:07,588 - INFO - Metadatos guardados en: scraper_results/pixiv/metadata/images_metadata.csv
+2026-05-06 09:40:07,588 - INFO - Metadatos JSON guardados en: scraper_results/pixiv/metadata/images_metadata.json
+2026-05-06 09:40:07,590 - INFO - Reporte resumen: {'scraping_timestamp': '2026-05-06T09:40:07.589468', 'total_images': 0, 'total_failed': 0, 'total_duplicates_detected': 0, 'duplicates_by_reason': {}, 'total_unique_domains': 0, 'average_image_size_kb': 0.0, 'image_formats': [], 'domains': [], 'date_range': {'earliest': 'desconocida', 'latest': 'desconocida'}}
+2026-05-06 09:40:07,590 - INFO - Archivos guardados en: scraper_results/pixiv
+
+============================================================
+SCRAPING COMPLETADO
+============================================================
+Imágenes descargadas: 0
+Fallos: 0
+Páginas procesadas: 1
+Resultados en: scraper_results/pixiv
+============================================================
+2026-05-06 09:40:07,911 - INFO - Iniciando scraping de https://www.uab.cat
+2026-05-06 09:40:07,912 - INFO - Procesando página 1/1: https://www.uab.cat
+2026-05-06 09:40:08,204 - INFO - Encontradas 18 imágenes en https://www.uab.cat
+2026-05-06 09:40:08,366 - INFO - Imagen guardada: c5da771803bd83e5be867731426d3cfc.jpeg
+2026-05-06 09:40:08,799 - INFO - Imagen guardada: 0df8b2706c23ca4c633da1dc14469332.jpeg
+2026-05-06 09:40:09,221 - INFO - Imagen guardada: e6e6503d5ca31e7684fbdecb3305ba4c.jpeg
+2026-05-06 09:40:09,352 - INFO - Imagen guardada: 529037dc6f66e9b8e88e82491dd5ef96.jpeg
+2026-05-06 09:40:09,438 - INFO - Imagen guardada: e1aa5141dc4f7278a0790860625aca58.jpeg
+2026-05-06 09:40:09,507 - INFO - Imagen guardada: 55e3551426ed4a29d0c98a86b489e7f4.jpeg
+2026-05-06 09:40:12,059 - INFO - Imagen guardada: 9f4c4432794fa797139df150c9a60754.png
+2026-05-06 09:40:12,371 - INFO - Imagen guardada: d193775596980a2541e8a5623d66949b.png
+2026-05-06 09:40:12,406 - WARNING - Error descargando https://www.uab.cat/Imatge/81/838/IMG_7399 - cÃ²pia.JPG: 404 Client Error: Not Found for url: https://www.uab.cat/Imatge/81/838/IMG_7399%20-%20c%C3%83%C2%B2pia.JPG
+2026-05-06 09:40:12,984 - INFO - Imagen guardada: db7821adb36b26f1ea63db3ad972c41c.jpeg
+2026-05-06 09:40:13,089 - INFO - Imagen guardada: fc0f98c025440cca696c257f995b11b8.jpeg
+2026-05-06 09:40:13,321 - INFO - Imagen guardada: b54172e4087a00dd15185c86706d848f.jpeg
+2026-05-06 09:40:13,479 - INFO - Imagen guardada: 074d5564b156c3bbd92abdac5a0baae8.jpeg
+2026-05-06 09:40:13,545 - INFO - Imagen guardada: 4eda4e72207f9dd57e8c342e0113d0a5.jpeg
+2026-05-06 09:40:13,606 - INFO - Imagen guardada: 7ac835c3dc6513911f77717881205beb.jpeg
+2026-05-06 09:40:13,740 - INFO - Imagen guardada: b88602a6c6946a488ad70827a24abb84.png
+2026-05-06 09:40:13,775 - INFO - Imagen guardada: 465f5e3e8035d070c5acae7f69c5925d.png
+2026-05-06 09:40:13,918 - INFO - Imagen guardada: 18fa4ac259a532b0c034396e702da9a6.png
+2026-05-06 09:40:14,926 - INFO - Metadatos guardados en: scraper_results/universitat_autonoma_de_barcelona/metadata/images_metadata.csv
+2026-05-06 09:40:14,929 - INFO - Metadatos JSON guardados en: scraper_results/universitat_autonoma_de_barcelona/metadata/images_metadata.json
+2026-05-06 09:40:14,932 - INFO - Reporte resumen: {'scraping_timestamp': '2026-05-06T09:40:14.931811', 'total_images': 17, 'total_failed': 1, 'total_duplicates_detected': 0, 'duplicates_by_reason': {}, 'total_unique_domains': 1, 'average_image_size_kb': 347.734375, 'image_formats': ['image/jpeg', 'image/png'], 'domains': ['www.uab.cat'], 'date_range': {'earliest': '2022-12-20', 'latest': '2026-05-06'}}
+2026-05-06 09:40:14,932 - INFO - Archivos guardados en: scraper_results/universitat_autonoma_de_barcelona
+
+============================================================
+SCRAPING COMPLETADO
+============================================================
+Imágenes descargadas: 17
+Fallos: 1
+Páginas procesadas: 1
+Resultados en: scraper_results/universitat_autonoma_de_barcelona
+============================================================
+2026-05-06 09:40:15,181 - INFO - Iniciando scraping de https://www.upc.edu/ca
+2026-05-06 09:40:15,181 - INFO - Procesando página 1/1: https://www.upc.edu/ca
+2026-05-06 09:40:15,433 - INFO - Encontradas 70 imágenes en https://www.upc.edu/ca
+2026-05-06 09:40:15,514 - INFO - Imagen guardada: 2323c9c2eb8958eaf331612011a85cf1.jpeg
+2026-05-06 09:40:15,904 - INFO - Imagen guardada: 1b6e9abc3ab9312a0c45d0687f982446.jpeg
+2026-05-06 09:40:16,074 - INFO - Imagen guardada: 8f4a4c4c3f1cbd5f31fea644b3ac2a67.jpeg
+2026-05-06 09:40:16,141 - INFO - Imagen guardada: a677c8a9bb6f50ec00619d6008ed9c47.jpeg
+2026-05-06 09:40:16,178 - INFO - Imagen guardada: 13c89e63832cd61871126279ca1f0fe1.jpeg
+2026-05-06 09:40:16,220 - INFO - Imagen guardada: bdbc31041140668fa630225a32d61a7c.jpeg
+2026-05-06 09:40:16,264 - INFO - Imagen guardada: 0bc2b6168cbf9e06072a909e0d41e13a.jpeg
+2026-05-06 09:40:16,309 - INFO - Imagen guardada: 545a6cb5f73d083c6f8a1403a085d7b5.jpeg
+2026-05-06 09:40:16,361 - INFO - Imagen guardada: 6d774abeeceb88730d50da70d3b1f900.jpeg
+2026-05-06 09:40:16,429 - INFO - Imagen guardada: ac9e7ea13323a466c527e08a17cbb772.jpeg
+2026-05-06 09:40:16,472 - INFO - Imagen guardada: 0e20407c4eee00c33b8f14944df87530.jpeg
+2026-05-06 09:40:16,506 - INFO - Imagen guardada: 1455fd0ea4dfafc66ddab6844dcd9894.jpeg
+2026-05-06 09:40:16,540 - INFO - Imagen guardada: 11c4299eb8266ce031cabf0b0ada8267.jpeg
+2026-05-06 09:40:16,607 - INFO - Imagen guardada: 1e126ea6c3f3df0847ac8724e84f6abc.jpeg
+2026-05-06 09:40:16,673 - INFO - Imagen guardada: ca69522b69e61342fa458870fb90bd77.jpeg
+2026-05-06 09:40:16,732 - INFO - Imagen guardada: edac6e020a5848054dccab884b61c65b.jpeg
+2026-05-06 09:40:16,780 - INFO - Imagen guardada: c99a32d0d38866ecbe4dbaa72755e79d.png
+2026-05-06 09:40:16,871 - INFO - Imagen guardada: a937411b6b05245bbfdd4ef50c06aceb.jpeg
+2026-05-06 09:40:16,911 - INFO - Imagen guardada: 716656b95d09f5712c9fa72aa7b87b6d.jpeg
+2026-05-06 09:40:16,966 - INFO - Imagen guardada: 4437875d5380784c2d03ca2596737994.jpeg
+2026-05-06 09:40:17,018 - INFO - Imagen guardada: e102332d86d0f13a2d264c82723e4aa8.png
+2026-05-06 09:40:17,113 - INFO - Imagen guardada: 55daa8b4dd3c02d5a86f8a036105644d.jpeg
+2026-05-06 09:40:17,203 - INFO - Imagen guardada: ce8e1266ad8c9d8843c349955c2dffae.jpeg
+2026-05-06 09:40:17,243 - INFO - Imagen guardada: b3672516c7ac59b07a473852a267a325.jpeg
+2026-05-06 09:40:17,338 - INFO - Imagen guardada: c00312084dac67935984db72c26a17d9.jpeg
+2026-05-06 09:40:17,387 - INFO - Imagen guardada: 3002067c24f6cb68f50a6b8d65038ce0.jpeg
+2026-05-06 09:40:17,427 - INFO - Imagen guardada: ef291ce68150a3aed2d8756c1e2789c0.jpeg
+2026-05-06 09:40:17,467 - INFO - Imagen guardada: e36dacdcaaf65f72e4ade1af7f8b8b61.jpeg
+2026-05-06 09:40:17,522 - INFO - Imagen guardada: 67ad961850bd00144e6e805eced29c75.jpeg
+2026-05-06 09:40:17,558 - INFO - Imagen guardada: 876469c2d10f05cbedbd78e1d1c3e9a1.jpeg
+2026-05-06 09:40:17,594 - INFO - Imagen guardada: b64834621e0c94c58d955851e489c042.jpeg
+2026-05-06 09:40:17,627 - INFO - Imagen guardada: d945a9ea1828b14990e0837085c8080a.jpeg
+2026-05-06 09:40:17,660 - INFO - Imagen guardada: 7c6f0cd31fefe28dc4f4d27a6eba65df.jpeg
+2026-05-06 09:40:17,698 - INFO - Imagen guardada: 8de2586da14ae0d52acbc1fe841e37e9.jpeg
+2026-05-06 09:40:17,743 - INFO - Imagen guardada: 8e82ce921f13a3a3cf635d58e3915f2c.jpeg
+2026-05-06 09:40:17,882 - INFO - Imagen guardada: ccf37d29ed154ccd82c66112f19fff16.jpeg
+2026-05-06 09:40:17,998 - INFO - Imagen guardada: 415465d1c5fddebb1b650731800a899f.jpeg
+2026-05-06 09:40:18,078 - INFO - Imagen guardada: 0621c7e40f41a4f81814238cfad70645.webp
+2026-05-06 09:40:18,213 - INFO - Imagen guardada: ed412042ccfccaf400326d4f3dab50c4.jpeg
+2026-05-06 09:40:18,245 - INFO - Imagen guardada: dade6bbdcc665caf19b7cf4dd7cdc213.png
+2026-05-06 09:40:18,280 - INFO - Imagen guardada: fecc7d46d9ba6564167a203781993830.png
+2026-05-06 09:40:18,315 - INFO - Imagen guardada: 092e18aba55a127225ff4fef0d06d514.png
+2026-05-06 09:40:18,388 - INFO - Imagen guardada: 5d953cf88f4b5382f65ab6d562dcfe3a.png
+2026-05-06 09:40:18,423 - INFO - Imagen guardada: 732bb1091e1aa972ffd490750e8c78db.png
+2026-05-06 09:40:18,687 - INFO - Imagen guardada: 725d9a0910a72d43cd13b007b807823d.png
+2026-05-06 09:40:21,266 - INFO - Metadatos guardados en: scraper_results/universitat_politecnica_de_catalunya/metadata/images_metadata.csv
+2026-05-06 09:40:21,270 - INFO - Metadatos JSON guardados en: scraper_results/universitat_politecnica_de_catalunya/metadata/images_metadata.json
+2026-05-06 09:40:21,274 - INFO - Reporte resumen: {'scraping_timestamp': '2026-05-06T09:40:21.274040', 'total_images': 45, 'total_failed': 0, 'total_duplicates_detected': 52, 'duplicates_by_reason': {'exact_url_duplicate': 29, 'perceptual_duplicate': 23}, 'total_unique_domains': 1, 'average_image_size_kb': 156.05922309027778, 'image_formats': ['image/webp', 'image/png', 'image/jpeg'], 'domains': ['www.upc.edu'], 'date_range': {'earliest': '2017-09-27', 'latest': '2026-04-20'}}
+2026-05-06 09:40:21,274 - INFO - Archivos guardados en: scraper_results/universitat_politecnica_de_catalunya
+
+============================================================
+SCRAPING COMPLETADO
+============================================================
+Imágenes descargadas: 45
+Fallos: 0
+Páginas procesadas: 1
+Resultados en: scraper_results/universitat_politecnica_de_catalunya
+============================================================
+2026-05-06 09:40:21,562 - INFO - Iniciando scraping de https://www.mit.edu
+2026-05-06 09:40:21,562 - INFO - Procesando página 1/1: https://www.mit.edu
+2026-05-06 09:40:21,953 - INFO - Encontradas 7 imágenes en https://www.mit.edu
+2026-05-06 09:40:22,232 - INFO - Imagen guardada: 5bf537363adea6fc9b704674d3dced5f.jpeg
+2026-05-06 09:40:22,434 - INFO - Imagen guardada: 39fed8c96202fb2c96710a2dbdf76d18.jpeg
+2026-05-06 09:40:22,634 - INFO - Imagen guardada: 35df0f1742d79114e82685cef270f2f1.jpeg
+2026-05-06 09:40:22,826 - INFO - Imagen guardada: add9a843a96d9f611c65adbc96ea9be6.jpeg
+2026-05-06 09:40:23,015 - INFO - Imagen guardada: 757fa15e558f51b1a2969c7f5a39c141.jpeg
+2026-05-06 09:40:23,206 - INFO - Imagen guardada: 97a84367ee28805e59c014f3e7ad4d58.jpeg
+2026-05-06 09:40:23,407 - INFO - Imagen guardada: 5665f67e517ca717954f2e2c59c55638.jpeg
+2026-05-06 09:40:24,410 - INFO - Metadatos guardados en: scraper_results/mit/metadata/images_metadata.csv
+2026-05-06 09:40:24,412 - INFO - Metadatos JSON guardados en: scraper_results/mit/metadata/images_metadata.json
+2026-05-06 09:40:24,415 - INFO - Reporte resumen: {'scraping_timestamp': '2026-05-06T09:40:24.414535', 'total_images': 7, 'total_failed': 0, 'total_duplicates_detected': 0, 'duplicates_by_reason': {}, 'total_unique_domains': 1, 'average_image_size_kb': 80.40401785714286, 'image_formats': ['image/jpeg'], 'domains': ['www.mit.edu'], 'date_range': {'earliest': '2025-05-09', 'latest': '2026-05-06'}}
+2026-05-06 09:40:24,415 - INFO - Archivos guardados en: scraper_results/mit
+
+============================================================
+SCRAPING COMPLETADO
+============================================================
+Imágenes descargadas: 7
+Fallos: 0
+Páginas procesadas: 1
+Resultados en: scraper_results/mit
+============================================================
+2026-05-06 09:40:24,657 - INFO - Iniciando scraping de https://www.stanford.edu
+2026-05-06 09:40:24,657 - INFO - Procesando página 1/1: https://www.stanford.edu
+2026-05-06 09:40:24,884 - INFO - Encontradas 31 imágenes en https://www.stanford.edu
+2026-05-06 09:40:24,902 - WARNING - Error descargando data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7: No connection adapters were found for 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'
+2026-05-06 09:40:24,946 - INFO - Imagen guardada: 5b36bfdad48407eca67bb2fe6951fd70.jpeg
+2026-05-06 09:40:24,976 - INFO - Imagen guardada: 01a9d79c2f2418ea23dc4c6032bcc9c6.png
+2026-05-06 09:40:25,000 - INFO - Imagen guardada: 033883b03ddb3c5e0dbb3d043e1ec952.jpeg
+2026-05-06 09:40:25,105 - INFO - Imagen guardada: a4879f01adca7d6997214870b425414c.jpeg
+2026-05-06 09:40:25,137 - INFO - Imagen guardada: 835e14945189f30e352c1db4a06ee86d.jpeg
+2026-05-06 09:40:25,198 - INFO - Imagen guardada: 112f3c8c46a41d44f193eb0690111d16.jpeg
+2026-05-06 09:40:25,229 - INFO - Imagen guardada: 18dc3187444a20c1c9fb0121366b42b4.jpeg
+2026-05-06 09:40:25,258 - INFO - Imagen guardada: ad94f35f5175567cff4c8d370e241e2e.jpeg
+2026-05-06 09:40:25,290 - INFO - Imagen guardada: a862358cc99dc0ff3b3222222ab76726.jpeg
+2026-05-06 09:40:25,317 - INFO - Imagen guardada: c1a5697f2905f01bd4080106da894501.jpeg
+2026-05-06 09:40:25,348 - INFO - Imagen guardada: 7985379f52b91c03d432fdd730a786a7.jpeg
+2026-05-06 09:40:25,400 - INFO - Imagen guardada: 74bd6fbf6949178f4610257c45e99ce1.jpeg
+2026-05-06 09:40:25,442 - INFO - Imagen guardada: 4230d4342bc882ae400bcc4f53eedace.jpeg
+2026-05-06 09:40:25,474 - INFO - Imagen guardada: 0dfda05631c8d1061fcbb97294063f0e.jpeg
+2026-05-06 09:40:25,629 - INFO - Imagen guardada: 893ef789e7041a8bfd9162fe5eb58ce9.png
+2026-05-06 09:40:25,666 - INFO - Imagen guardada: 2685195fb8d51de16457798ecadf0520.jpeg
+2026-05-06 09:40:25,711 - INFO - Imagen guardada: 4338da0ba56e92c17a318c954e16b781.jpeg
+2026-05-06 09:40:25,743 - INFO - Imagen guardada: ccebc4fc475a1924284e492954b8b375.jpeg
+2026-05-06 09:40:25,768 - INFO - Imagen guardada: 6f5b6b3a13bd52da94eea704f2460347.jpeg
+2026-05-06 09:40:25,798 - INFO - Imagen guardada: 3adc8a4c28d5fd2dcffdfcbee7be787f.jpeg
+2026-05-06 09:40:25,833 - INFO - Imagen guardada: 543f2d0d2258aca5079f739395e9cc67.jpeg
+2026-05-06 09:40:25,891 - INFO - Imagen guardada: 1eafdfa603cc532aef7632d2c46b1424.jpeg
+2026-05-06 09:40:25,953 - INFO - Imagen guardada: 9e5f51991df4cdefc77a04342c043410.jpeg
+2026-05-06 09:40:26,005 - INFO - Imagen guardada: a47409ea5e28dcc1886ee3ca8906171a.jpeg
+2026-05-06 09:40:26,039 - INFO - Imagen guardada: 60c66ab858be89b9975389d0a58c4123.jpeg
+2026-05-06 09:40:26,075 - INFO - Imagen guardada: b6ea2e6e1953125a882e1f37f2aa580f.jpeg
+2026-05-06 09:40:26,221 - INFO - Imagen guardada: 33638a71d4d5ad40761614aeada32e1b.png
+2026-05-06 09:40:26,251 - INFO - Imagen guardada: 40e179feb5472ab39f173cb0ba04d8fa.jpeg
+2026-05-06 09:40:26,298 - INFO - Imagen guardada: 502ffc381f8410a54bff88c2508625e2.jpeg
+2026-05-06 09:40:26,343 - INFO - Imagen guardada: a558fc76fdcc2262edd95bbc6bdbc97e.jpeg
+2026-05-06 09:40:27,353 - INFO - Metadatos guardados en: scraper_results/stanford_university/metadata/images_metadata.csv
+2026-05-06 09:40:27,359 - INFO - Metadatos JSON guardados en: scraper_results/stanford_university/metadata/images_metadata.json
+2026-05-06 09:40:27,363 - INFO - Reporte resumen: {'scraping_timestamp': '2026-05-06T09:40:27.362661', 'total_images': 30, 'total_failed': 1, 'total_duplicates_detected': 53, 'duplicates_by_reason': {'exact_url_duplicate': 53}, 'total_unique_domains': 1, 'average_image_size_kb': 375.41529947916666, 'image_formats': ['image/jpeg', 'image/png'], 'domains': ['www.stanford.edu'], 'date_range': {'earliest': 'desconocida', 'latest': 'desconocida'}}
+2026-05-06 09:40:27,363 - INFO - Archivos guardados en: scraper_results/stanford_university
+
+============================================================
+SCRAPING COMPLETADO
+============================================================
+Imágenes descargadas: 30
+Fallos: 1
+Páginas procesadas: 1
+Resultados en: scraper_results/stanford_university
+============================================================
+2026-05-06 09:40:27,633 - INFO - Iniciando scraping de https://www.ox.ac.uk
+2026-05-06 09:40:27,633 - INFO - Procesando página 1/1: https://www.ox.ac.uk
+2026-05-06 09:40:27,897 - ERROR - Error descargando https://www.ox.ac.uk: 403 Client Error: Forbidden for url: https://www.ox.ac.uk/
+2026-05-06 09:40:27,898 - INFO - Metadatos guardados en: scraper_results/university_of_oxford/metadata/images_metadata.csv
+2026-05-06 09:40:27,899 - INFO - Metadatos JSON guardados en: scraper_results/university_of_oxford/metadata/images_metadata.json
+2026-05-06 09:40:27,899 - INFO - Reporte resumen: {'scraping_timestamp': '2026-05-06T09:40:27.899144', 'total_images': 0, 'total_failed': 0, 'total_duplicates_detected': 0, 'duplicates_by_reason': {}, 'total_unique_domains': 0, 'average_image_size_kb': 0.0, 'image_formats': [], 'domains': [], 'date_range': {'earliest': 'desconocida', 'latest': 'desconocida'}}
+2026-05-06 09:40:27,899 - INFO - Archivos guardados en: scraper_results/university_of_oxford
+
+============================================================
+SCRAPING COMPLETADO
+============================================================
+Imágenes descargadas: 0
+Fallos: 0
+Páginas procesadas: 1
+Resultados en: scraper_results/university_of_oxford
+============================================================
+2026-05-06 09:40:28,156 - INFO - Iniciando scraping de https://commons.wikimedia.org
+2026-05-06 09:40:28,156 - INFO - Procesando página 1/1: https://commons.wikimedia.org
+2026-05-06 09:40:28,511 - INFO - Encontradas 4 imágenes en https://commons.wikimedia.org
+2026-05-06 09:40:28,974 - INFO - Imagen guardada: 3590adb6e030013bc9d873e6f7fb96dc.jpeg
+2026-05-06 09:40:29,492 - INFO - Imagen guardada: 3002aedde2d9e385ef6523b4794495bd.jpeg
+2026-05-06 09:40:30,496 - INFO - Metadatos guardados en: scraper_results/wikimedia_commons/metadata/images_metadata.csv
+2026-05-06 09:40:30,497 - INFO - Metadatos JSON guardados en: scraper_results/wikimedia_commons/metadata/images_metadata.json
+2026-05-06 09:40:30,498 - INFO - Reporte resumen: {'scraping_timestamp': '2026-05-06T09:40:30.497993', 'total_images': 2, 'total_failed': 0, 'total_duplicates_detected': 1, 'duplicates_by_reason': {'exact_url_duplicate': 1}, 'total_unique_domains': 1, 'average_image_size_kb': 186.1904296875, 'image_formats': ['image/jpeg'], 'domains': ['commons.wikimedia.org'], 'date_range': {'earliest': '2025-08-30', 'latest': '2026-05-06'}}
+2026-05-06 09:40:30,499 - INFO - Archivos guardados en: scraper_results/wikimedia_commons
+
+============================================================
+SCRAPING COMPLETADO
+============================================================
+Imágenes descargadas: 2
+Fallos: 0
+Páginas procesadas: 1
+Resultados en: scraper_results/wikimedia_commons
+============================================================
+2026-05-06 09:40:30,749 - INFO - Iniciando scraping de https://images.nasa.gov
+2026-05-06 09:40:30,749 - INFO - Procesando página 1/1: https://images.nasa.gov
+2026-05-06 09:40:31,455 - INFO - Encontradas 0 imágenes en https://images.nasa.gov
+2026-05-06 09:40:32,463 - INFO - Metadatos guardados en: scraper_results/nasa_image_and_video_library/metadata/images_metadata.csv
+2026-05-06 09:40:32,464 - INFO - Metadatos JSON guardados en: scraper_results/nasa_image_and_video_library/metadata/images_metadata.json
+2026-05-06 09:40:32,465 - INFO - Reporte resumen: {'scraping_timestamp': '2026-05-06T09:40:32.464678', 'total_images': 0, 'total_failed': 0, 'total_duplicates_detected': 0, 'duplicates_by_reason': {}, 'total_unique_domains': 0, 'average_image_size_kb': 0.0, 'image_formats': [], 'domains': [], 'date_range': {'earliest': 'desconocida', 'latest': 'desconocida'}}
+2026-05-06 09:40:32,465 - INFO - Archivos guardados en: scraper_results/nasa_image_and_video_library
+
+============================================================
+SCRAPING COMPLETADO
+============================================================
+Imágenes descargadas: 0
+Fallos: 0
+Páginas procesadas: 1
+Resultados en: scraper_results/nasa_image_and_video_library
+============================================================
+2026-05-06 09:40:32,705 - INFO - Iniciando scraping de https://www.metmuseum.org/art/collection
+2026-05-06 09:40:32,705 - INFO - Procesando página 1/1: https://www.metmuseum.org/art/collection
+2026-05-06 09:40:33,111 - INFO - Encontradas 21 imágenes en https://www.metmuseum.org/art/collection
+2026-05-06 09:40:33,613 - INFO - Imagen guardada: 41482976b1213ae68d064e0e394ce8c4.jpeg
+2026-05-06 09:40:33,986 - INFO - Imagen guardada: e89eb8a1406daa5a90c7b2aa21d4b02d.jpeg
+2026-05-06 09:40:34,255 - INFO - Imagen guardada: ccb606d2a7160ff8fd53bd596c3805c6.jpeg
+2026-05-06 09:40:34,361 - INFO - Imagen guardada: 8805df8f0f926f1e87cd1c645484292e.jpeg
+2026-05-06 09:40:34,595 - INFO - Imagen guardada: b20a7229aa19cd8cd8a65a658774b58b.jpeg
+2026-05-06 09:40:35,309 - INFO - Imagen guardada: d43c394a0e7d43ba72a7e4916c0d8503.jpeg
+2026-05-06 09:40:35,539 - INFO - Imagen guardada: 4fd194830371e75410affd61757ae06e.jpeg
+2026-05-06 09:40:35,794 - INFO - Imagen guardada: d28b51df9e82128a21a211834f62b7f6.jpeg
+2026-05-06 09:40:36,051 - INFO - Imagen guardada: e0b3a87b10b12c84d5b1ea4bf7879bfe.jpeg
+2026-05-06 09:40:36,265 - INFO - Imagen guardada: 0c7c5cc47c363ce96b621a7ca64bdf78.jpeg
+2026-05-06 09:40:36,548 - INFO - Imagen guardada: 9f5d28e5faeeabb6c43103608741a394.jpeg
+2026-05-06 09:40:37,428 - INFO - Imagen guardada: 48ae4f8fec509d6cf0aaae6abef84f1d.jpeg
+2026-05-06 09:40:37,651 - INFO - Imagen guardada: bd0ea5c34b7a82345d0fd4277163c6a0.jpeg
+2026-05-06 09:40:37,899 - INFO - Imagen guardada: 71a29f269f9441b683fb7ad8d9e3140d.jpeg
+2026-05-06 09:40:38,174 - INFO - Imagen guardada: 8deebef05fd72658dfd20029a77d212b.jpeg
+2026-05-06 09:40:38,423 - INFO - Imagen guardada: 86fe480138bdbe77e7ca7613dc131ece.jpeg
+2026-05-06 09:40:40,086 - INFO - Imagen guardada: 2f6376f9661c49f71d600356cd011ae7.jpeg

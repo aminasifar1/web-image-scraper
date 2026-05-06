@@ -1,38 +1,21 @@
 url,sector,subsector,organization_name
-https://elpais.com/,news,newspaper,El Pais
+https://www.rtve.es/noticias,news,newspaper,RTVE Noticias
 https://www.bbc.co.uk/news,news,broadcaster,BBC News
+https://elpais.com,news,newspaper,El Pais
 https://www.lavanguardia.com,news,newspaper,La Vanguardia
 https://www.nytimes.com,news,newspaper,New York Times
-https://www.rtve.es/noticias,news,newspaper,RTVE Noticias
-https://www.flickr.com,social_media,photo_hosting,Flickr
-https://www.tumblr.com,social_media,microblog,Tumblr
-https://www.linkedin.com,social_media,professional_network,LinkedIn
-https://www.reddit.com,social_media,discussion_forum,Reddit
-https://www.pinterest.com,social_media,visual_discovery,Pinterest
-https://www.artstation.com,arts_illustration,digital_portfolio,ArtStation
 https://www.deviantart.com,arts_illustration,artist_community,DeviantArt
+https://www.artstation.com,arts_illustration,digital_portfolio,ArtStation
+https://www.behance.net,arts_illustration,creative_portfolio,Behance
 https://dribbble.com,arts_illustration,design_showcase,Dribbble
 https://www.pixiv.net,arts_illustration,illustration_community,Pixiv
-https://www.behance.net,arts_illustration,creative_portfolio,Behance
 https://www.uab.cat,education_institution,university,Universitat Autonoma de Barcelona
 https://www.upc.edu/ca,education_institution,university,Universitat Politecnica de Catalunya
+https://www.mit.edu,education_institution,university,MIT
 https://www.stanford.edu,education_institution,university,Stanford University
 https://www.ox.ac.uk,education_institution,university,University of Oxford
-https://www.mit.edu,education_institution,university,MIT
-https://www.apple.com,corporate,technology_company,Apple
-https://www.microsoft.com,corporate,technology_company,Microsoft
-https://about.google,corporate,technology_company,Google
-https://www.ibm.com,corporate,technology_company,IBM
-https://www.adobe.com,corporate,technology_company,Adobe
 https://commons.wikimedia.org,open_image_library,public_domain_archive,Wikimedia Commons
-https://openverse.org,open_image_library,creative_commons_search,Openverse
-https://unsplash.com,open_image_library,stock_photography,Unsplash
-https://www.pexels.com,open_image_library,stock_photography,Pexels
-https://pixabay.com,open_image_library,stock_photography,Pixabay
-https://www.metmuseum.org/art/collection,museum_collection,open_access,The Met Collection
-https://www.rijksmuseum.nl/en/collection,museum_collection,open_access,Rijksmuseum Collection
-https://www.si.edu/openaccess,museum_collection,open_access,Smithsonian Open Access
-https://www.europeana.eu,enrichment_archive,cultural_heritage,Europeana
-https://www.loc.gov/pictures/,public_archive,library_collection,Library of Congress Pictures
 https://images.nasa.gov,public_archive,space_media,NASA Image and Video Library
-https://www.flickr.com/commons,social_media,public_heritage_images,Flickr Commons
+https://www.metmuseum.org/art/collection,museum_collection,open_access,The Met Collection
+https://openverse.org,open_image_library,creative_commons_search,Openverse
+https://www.si.edu/openaccess,museum_collection,open_access,Smithsonian Open Access

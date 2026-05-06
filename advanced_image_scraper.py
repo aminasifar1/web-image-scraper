@@ -25,7 +25,7 @@ from collections import defaultdict
 from dataclasses import dataclass, asdict
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Set, Tuple
+from typing import Any, Dict, List, Optional, Set, Tuple
 from urllib.parse import urljoin, urlparse
 from email.utils import parsedate_to_datetime
 from xml.etree import ElementTree as ET
@@ -35,6 +35,16 @@ from bs4 import BeautifulSoup
 from PIL import Image
 from PIL.ExifTags import TAGS
 from io import BytesIO
+
+try:
+    import browser_cookie3  # type: ignore
+except Exception:
+    browser_cookie3 = None
+
+try:
+    from playwright.sync_api import sync_playwright  # type: ignore
+except Exception:
+    sync_playwright = None
 
 
 def _normalize_context_text(value: str) -> str:
@@ -276,16 +286,43 @@ class AdvancedImageScraper:
         convert_to_png: bool = False,
         perceptual_threshold: int = DEFAULT_PERCEPTUAL_THRESHOLD,
         perceptual_hash_size: int = DEFAULT_PERCEPTUAL_HASH_SIZE,
+        cookies_file: Optional[str] = None,
+        cookie_pairs: Optional[List[str]] = None,
+        cookie_header: Optional[str] = None,
+        browser_cookies: Optional[str] = None,
+        use_playwright_fallback: bool = False,
+        playwright_headless: bool = True,
+        playwright_timeout_ms: int = 30000,
+        playwright_wait_until: str = 'networkidle',
+        extra_headers: Optional[List[str]] = None,
+        images_subdir: str = 'images',
     ):
         self.output_dir = Path(output_dir)
         self.delay = delay
         self.convert_to_png = convert_to_png
         self.perceptual_threshold = max(0, int(perceptual_threshold))
         self.perceptual_hash_size = max(4, int(perceptual_hash_size))
+        self.images_subdir = (images_subdir or 'images').strip() or 'images'
+        self.browser_cookies = (browser_cookies or '').strip().lower()
+        self.use_playwright_fallback = bool(use_playwright_fallback)
+        self.playwright_headless = bool(playwright_headless)
+        self.playwright_timeout_ms = max(1000, int(playwright_timeout_ms or 30000))
+        self.playwright_wait_until = (playwright_wait_until or 'networkidle').strip()
         self.session = requests.Session()
         self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8'
         })
+
+        if extra_headers:
+            self._apply_extra_headers(extra_headers)
+        if cookies_file:
+            self._load_cookies_from_file(cookies_file)
+        if cookie_pairs:
+            self._apply_cookie_pairs(cookie_pairs)
+        if cookie_header:
+            self._apply_cookie_header(cookie_header)
         
         # Crear directorios
         self._create_directories()
@@ -316,13 +353,217 @@ class AdvancedImageScraper:
     def _create_directories(self):
         """Crea la estructura de directorios necesaria"""
         dirs = {
-            'images': self.output_dir / 'images_lavanguardia',
+            'images': self.output_dir / self.images_subdir,
             'metadata': self.output_dir / 'metadata',
             'logs': self.output_dir / 'logs'
         }
         
         for dir_path in dirs.values():
             dir_path.mkdir(parents=True, exist_ok=True)
+
+    def _apply_extra_headers(self, raw_headers: List[str]) -> None:
+        """Aplica headers personalizados desde argumentos tipo 'Key: Value'."""
+        for header in raw_headers:
+            if not header or ':' not in header:
+                logger.warning(f"Header inválido (usa 'Clave: Valor'): {header}")
+                continue
+            key, value = header.split(':', 1)
+            key = key.strip()
+            value = value.strip()
+            if not key:
+                logger.warning(f"Header inválido: {header}")
+                continue
+            self.session.headers[key] = value
+
+    def _load_cookies_from_file(self, cookies_file: str) -> None:
+        """Carga cookies desde JSON en formato dict o lista de cookies."""
+        path = Path(cookies_file)
+        if not path.exists():
+            logger.warning(f"No existe el archivo de cookies: {path}")
+            return
+
+        try:
+            payload: Any = json.loads(path.read_text(encoding='utf-8'))
+        except Exception as e:
+            logger.warning(f"No se pudo leer cookies desde {path}: {e}")
+            return
+
+        if isinstance(payload, dict):
+            # Formato simple: {"cookie_name": "value", ...}
+            for name, value in payload.items():
+                self.session.cookies.set(str(name), str(value))
+            return
+
+        if isinstance(payload, list):
+            # Formato exportado de navegador: [{"name":..., "value":..., "domain":..., ...}, ...]
+            for item in payload:
+                if not isinstance(item, dict):
+                    continue
+                name = item.get('name')
+                value = item.get('value')
+                if not name:
+                    continue
+                domain = item.get('domain')
+                path_value = item.get('path', '/')
+                secure = bool(item.get('secure', False))
+                expires = item.get('expirationDate') or item.get('expires')
+                try:
+                    cookie = requests.cookies.create_cookie(
+                        name=str(name),
+                        value=str(value or ''),
+                        domain=domain,
+                        path=path_value,
+                        secure=secure,
+                        expires=int(expires) if expires else None,
+                    )
+                    self.session.cookies.set_cookie(cookie)
+                except Exception as e:
+                    logger.debug(f"Cookie ignorada ({name}): {e}")
+            return
+
+        logger.warning(f"Formato de cookies no soportado en {path}")
+
+    def _apply_cookie_pairs(self, cookie_pairs: List[str]) -> None:
+        """Aplica cookies directas en formato 'name=value'."""
+        for pair in cookie_pairs:
+            if not pair or '=' not in pair:
+                logger.warning(f"Cookie inválida (usa 'name=value'): {pair}")
+                continue
+            name, value = pair.split('=', 1)
+            name = name.strip()
+            value = value.strip()
+            if not name:
+                logger.warning(f"Cookie inválida: {pair}")
+                continue
+            self.session.cookies.set(name, value)
+
+    def _apply_cookie_header(self, cookie_header: str) -> None:
+        """Aplica cookies pegadas desde el header Cookie del navegador.
+
+        Formato esperado: "name1=value1; name2=value2; ..."
+        """
+        if not cookie_header:
+            return
+
+        parts = [part.strip() for part in cookie_header.split(';') if part.strip()]
+        for part in parts:
+            if '=' not in part:
+                continue
+            name, value = part.split('=', 1)
+            name = name.strip()
+            value = value.strip()
+            if name:
+                self.session.cookies.set(name, value)
+
+    def _load_browser_cookies_for_url(self, url: str) -> None:
+        """Carga cookies del navegador para el dominio objetivo (opcional)."""
+        if not self.browser_cookies:
+            return
+
+        if browser_cookie3 is None:
+            logger.warning("browser-cookie3 no está instalado. Instala: pip install browser-cookie3")
+            return
+
+        hostname = (urlparse(url).hostname or '').strip().lower()
+        if not hostname:
+            return
+
+        browser_loaders = {
+            'chrome': browser_cookie3.chrome,
+            'chromium': browser_cookie3.chromium,
+            'brave': browser_cookie3.brave,
+            'firefox': browser_cookie3.firefox,
+            'edge': browser_cookie3.edge,
+            'safari': browser_cookie3.safari,
+        }
+
+        loader = browser_loaders.get(self.browser_cookies)
+        if not loader:
+            logger.warning(f"Navegador no soportado para --browser-cookies: {self.browser_cookies}")
+            return
+
+        try:
+            cookie_jar = loader(domain_name=hostname)
+            self.session.cookies.update(cookie_jar)
+            logger.info(f"Cookies de navegador cargadas para {hostname} ({self.browser_cookies})")
+        except Exception as e:
+            logger.warning(f"No se pudieron cargar cookies del navegador ({self.browser_cookies}): {e}")
+
+    def _maybe_accept_cookie_banner_playwright(self, page) -> None:
+        """Intenta aceptar banner de cookies en sitios comunes (best-effort)."""
+        selectors = [
+            "button:has-text('Accept all')",
+            "button:has-text('I agree')",
+            "button:has-text('Allow all')",
+            "button:has-text('Aceptar')",
+            "button:has-text('Aceptar todo')",
+            "button:has-text('Aceptar todas')",
+            "button:has-text('Aceptar cookies')",
+            "#onetrust-accept-btn-handler",
+            "button[aria-label*='Accept']",
+            "button[title*='Accept']",
+        ]
+
+        for selector in selectors:
+            try:
+                locator = page.locator(selector).first
+                if locator.is_visible(timeout=1200):
+                    locator.click(timeout=1200)
+                    page.wait_for_timeout(600)
+                    return
+            except Exception:
+                continue
+
+    def _fetch_page_with_playwright(self, url: str) -> Optional[str]:
+        """Descarga HTML con Playwright para sortear bloqueos anti-bot/cookie walls."""
+        if sync_playwright is None:
+            logger.warning("Playwright no está instalado. Instala: pip install playwright && playwright install chromium")
+            return None
+
+        try:
+            with sync_playwright() as p:
+                browser = p.chromium.launch(headless=self.playwright_headless)
+                context = browser.new_context(
+                    user_agent=self.session.headers.get('User-Agent', ''),
+                    locale='es-ES',
+                )
+
+                cookies_to_set = []
+                for cookie in self.session.cookies:
+                    cookie_payload = {
+                        'name': cookie.name,
+                        'value': cookie.value,
+                        'path': cookie.path or '/',
+                        'secure': bool(cookie.secure),
+                    }
+                    if cookie.domain:
+                        cookie_payload['domain'] = cookie.domain
+                    else:
+                        cookie_payload['url'] = url
+                    if getattr(cookie, 'expires', None):
+                        cookie_payload['expires'] = float(cookie.expires)
+                    cookies_to_set.append(cookie_payload)
+
+                if cookies_to_set:
+                    try:
+                        context.add_cookies(cookies_to_set)
+                    except Exception as e:
+                        logger.debug(f"No se pudieron inyectar cookies en Playwright: {e}")
+
+                page = context.new_page()
+                page.goto(
+                    url,
+                    wait_until=self.playwright_wait_until,
+                    timeout=self.playwright_timeout_ms,
+                )
+                self._maybe_accept_cookie_banner_playwright(page)
+                page.wait_for_timeout(1200)
+                html = page.content()
+                browser.close()
+                return html
+        except Exception as e:
+            logger.warning(f"Playwright falló en {url}: {e}")
+            return None
     
     def _extract_images_from_html(self, html_content: str, page_url: str) -> List[Dict]:
         """
@@ -1072,6 +1313,7 @@ class AdvancedImageScraper:
             Diccionario con estadísticas del proceso
         """
         logger.info(f"Iniciando scraping de {url}")
+        self._load_browser_cookies_for_url(url)
         
         visited_urls = set()
         root_host = urlparse(url).netloc.lower()
@@ -1113,24 +1355,31 @@ class AdvancedImageScraper:
             
             limit_label = page_limit
             logger.info(f"Procesando página {pages_processed}/{limit_label}: {current_url}")
+
+            page_html: Optional[str] = None
             
             try:
                 # Descargar página
                 response = self.session.get(current_url, timeout=10)
                 response.raise_for_status()
+                page_html = response.text
             except Exception as e:
                 logger.error(f"Error descargando {current_url}: {e}")
-                continue
+                if self.use_playwright_fallback:
+                    logger.info(f"Intentando fallback con Playwright para {current_url}")
+                    page_html = self._fetch_page_with_playwright(current_url)
+                if not page_html:
+                    continue
             
             # Extraer imágenes
             try:
-                images_data = self._extract_images_from_html(response.text, current_url)
+                images_data = self._extract_images_from_html(page_html, current_url)
                 logger.info(f"Encontradas {len(images_data)} imágenes en {current_url}")
             except Exception as e:
                 logger.error(f"Error extrayendo imágenes de {current_url}: {e}")
                 continue
 
-            soup = BeautifulSoup(response.text, 'html.parser')
+            soup = BeautifulSoup(page_html, 'html.parser')
             for link_url in self._extract_links_from_page(current_url, soup):
                 normalized = self._normalize_internal_link(current_url, link_url, allowed_domains)
                 if normalized and normalized not in visited_urls and normalized not in to_visit:
@@ -1238,7 +1487,7 @@ class AdvancedImageScraper:
 
         image_extension = 'png' if self.convert_to_png else format_type.lower()
         image_filename = f"{metadata.image_id}.{image_extension}"
-        image_path = self.output_dir / 'images_lavanguardia' / image_filename
+        image_path = self.output_dir / self.images_subdir / image_filename
         
         try:
             image_path.write_bytes(image_bytes)
@@ -1312,7 +1561,7 @@ class AdvancedImageScraper:
                 if candidate.image_id == best.image_id:
                     continue
                 removed += 1
-                image_path = self.output_dir / 'images_lavanguardia' / candidate.filename
+                image_path = self.output_dir / self.images_subdir / candidate.filename
                 try:
                     if image_path.exists():
                         image_path.unlink()
@@ -1429,6 +1678,16 @@ def main():
     parser.add_argument('--delay', type=float, default=1.0, help='Delay entre peticiones (segundos)')
     parser.add_argument('--crawl-site', action='store_true', help='Intentar descubrir y recorrer el sitio completo, no solo la URL inicial')
     parser.add_argument('--convert-to-png', action='store_true', help='Convertir todas las imágenes descargadas a PNG')
+    parser.add_argument('--cookies-file', help='Ruta a JSON de cookies de sesión para autenticación')
+    parser.add_argument('--cookie', action='append', default=[], help="Cookie manual en formato name=value (repetible)")
+    parser.add_argument('--cookie-header', help='Header completo Cookie copiado del navegador (name=value; name2=value2)')
+    parser.add_argument('--browser-cookies', choices=['chrome', 'chromium', 'brave', 'firefox', 'edge', 'safari'], help='Cargar cookies automáticamente desde navegador')
+    parser.add_argument('--use-playwright-fallback', action='store_true', help='Usar Playwright si requests falla (403/anti-bot/cookie wall)')
+    parser.add_argument('--playwright-headed', action='store_true', help='Abrir navegador visible en fallback Playwright')
+    parser.add_argument('--playwright-timeout-ms', type=int, default=30000, help='Timeout de Playwright en milisegundos')
+    parser.add_argument('--playwright-wait-until', choices=['load', 'domcontentloaded', 'networkidle', 'commit'], default='networkidle', help='Estrategia de espera de Playwright al navegar')
+    parser.add_argument('--header', action='append', default=[], help="Header HTTP en formato 'Clave: Valor' (repetible)")
+    parser.add_argument('--images-subdir', default='images', help='Nombre de subcarpeta para imágenes (default: images)')
     parser.add_argument(
         '--perceptual-threshold',
         type=int,
@@ -1443,6 +1702,16 @@ def main():
         delay=args.delay,
         convert_to_png=args.convert_to_png,
         perceptual_threshold=args.perceptual_threshold,
+        cookies_file=args.cookies_file,
+        cookie_pairs=args.cookie,
+        cookie_header=args.cookie_header,
+        browser_cookies=args.browser_cookies,
+        use_playwright_fallback=args.use_playwright_fallback,
+        playwright_headless=(not args.playwright_headed),
+        playwright_timeout_ms=args.playwright_timeout_ms,
+        playwright_wait_until=args.playwright_wait_until,
+        extra_headers=args.header,
+        images_subdir=args.images_subdir,
     )
     result = scraper.scrape(args.url, max_pages=args.max_pages, crawl_site=args.crawl_site)
     
